@@ -1,0 +1,15 @@
+<div id="pcontrol_login_dfondo">
+  [msx]
+  <img src  ="imx/pcontrol/logo-login.png" style="position:fixed; bottom:2%;" />
+  [ccambiak][cacceso]
+</div>
+
+<script>
+  var dfondo = document.getElementById("pcontrol_login_dfondo");
+
+  var imxaux = new Image();
+
+  imxaux.src = "imx/pcontrol/login/[fondo]";
+
+  imxaux.onload = function () { dfondo.style.backgroundImage = "url('imx/pcontrol/login/[fondo]')"; };
+</script>

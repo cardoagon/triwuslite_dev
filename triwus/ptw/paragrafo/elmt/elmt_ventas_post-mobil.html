@@ -1,0 +1,68 @@
+<input type="hidden" value="[articulo_u]" id="findex;cpagar2;ccarro2_lista;elmt_ventas_uds" name="findex;cpagar2;ccarro2_lista;elmt_ventas_uds" />
+<input type="hidden" value="[articulo_i]" id="findex;cpagar2;ccarro2_lista;elmt_ventas_i" name="findex;cpagar2;ccarro2_lista;elmt_ventas_i" />
+
+<div class="elmt_ventas_post_1">
+  <div class="elmt_ventas_post_1__header">
+    <span>&#10004; Artículo añadido al carrito</span>
+    <img class="pechar" src="triwus/imx/accions/bcancel-2.svg" alt="[X]" title="Seguir comprando" onclick="elmt_ventas_postResposta_pechar(-1)" />
+  </div>
+
+  <div class="elmt_ventas_post_1__content">
+    <div class="elmt_ventas_post_1__tabla">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;">
+        <tr valign="top">
+          <td width="101px">
+            <img src="[foto]" class="elmt_ventas_post_3" />
+          </td>
+          <td width="*" style="padding-left: 11px">
+            <div><b>Artículo</b>&nbsp;&nbsp;[nome]</div>
+            <div><b>PVP</b>&nbsp;&nbsp;[pvp]€</div>
+            <div style="padding-top: 11px">[cc]</div>
+            <div style="padding-top: 11px">
+              <div><b>Unidades</b></div>
+              <div>
+                <button
+                  type="button"
+                  class="button lista_carro_bmais"
+                  style="font-size: 12px"
+                  onclick="elmt_ventas_postUnidades([articulo_i], -1, true)"
+                >
+                  −
+                </button>
+  
+                <input
+                  id="elmt_ventas_post_unidades"
+                  class="text cpagar3_text"
+                  style="max-width: 1.3em; text-align: center; margin: 0 3px"
+                  onchange="elmt_ventas_postUnidades([articulo_i], this.value, false)"
+                  placeholder=" "
+                  value="[articulo_u]"
+                  type="text"
+                />
+  
+                <button
+                  type="button"
+                  class="button lista_carro_bmais"
+                  style="font-size: 12px"
+                  onclick="elmt_ventas_postUnidades([articulo_i], 1, true)"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="elmt_ventas_post_1__carrito">
+      <div class="elmt_ventas_post_4" style="font-size: 14px">TU CARRITO DE LA COMPRA</div>
+      <div><b>Total de compra </b><span id="elmt_ventas_post_carro_t">[carro_t]&nbsp;€</span></div>
+      <div><b>Nº de artículos </b><span>[carro_u]</span></div>
+    </div>
+  </div>
+
+  <div class="elmt_ventas_post_1__footer">
+    <button class="button" type="button" onclick="elmt_ventas_postResposta_pechar(-1)">Seguir comprando</button>
+    <button class="button" type="button" onclick="document.location = '[lpago]'">Ir al carrito</button>
+  </div>
+</div>

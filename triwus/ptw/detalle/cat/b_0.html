@@ -1,0 +1,71 @@
+[hevento]
+
+<div id='cxcli3-buscador'>
+  <div class='ventas_prgf_0000'>
+    <div id='cxcli3-buscador_2' class='ventas_prgf_0000b' onclick='prgf_iventas_0000()'>
+      <svg class="ventas_prgf_0000d" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 226.8 226.8" xml:space="preserve">
+        <path d="M43.9,25.2V7.1c0-3.9-3.2-7.1-7.1-7.1s-7.1,3.2-7.1,7.1v18.1C12.9,28.5,0,43.4,0,61.4c0,17.9,12.9,32.9,29.8,36.2v122.2
+  c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1V97.5c17-3.3,29.8-18.3,29.8-36.2C73.7,43.4,60.9,28.5,43.9,25.2z M44.6,84
+  c-2.2,0.7-4.6,1.1-7,1.1c-2.4,0-4.8-0.4-7-1.1c-9.8-3-16.9-12.1-16.9-22.8s7.1-19.8,16.9-22.8c2.2-0.7,4.6-1.1,7-1.1
+  c2.4,0,4.8,0.4,7,1.1c9.8,3,16.9,12.1,16.9,22.8S54.3,81,44.6,84z M120.5,128.8V7.1c0-3.9-3.2-7.1-7.1-7.1s-7.1,3.2-7.1,7.1v121.8
+  c-17,3.3-29.8,18.3-29.8,36.2s12.9,32.9,29.8,36.2v18.5c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1v-18.5c17-3.3,29.8-18.3,29.8-36.2
+  S137.4,132.1,120.5,128.8z M120.8,187.3c-2.2,0.7-4.6,1.1-7,1.1s-4.8-0.4-7-1.1c-9.8-3-16.9-12.1-16.9-22.8
+  c0-10.7,7.1-19.8,16.9-22.8c2.2-0.7,4.6-1.1,7-1.1s4.8,0.4,7,1.1c9.8,3,16.9,12.1,16.9,22.8C137.7,175.1,130.6,184.2,120.8,187.3z
+   M197,67.1V7.1c0-3.9-3.2-7.1-7.1-7.1c-3.9,0-7.1,3.2-7.1,7.1v60.1c-17,3.3-29.8,18.3-29.8,36.2c0,17.9,12.9,32.9,29.8,36.2v80.2
+  c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1v-80.2c17-3.3,29.8-18.3,29.8-36.2C226.8,85.4,213.9,70.5,197,67.1z M197.1,125.8
+  c-2.2,0.7-4.6,1.1-7,1.1c-2.4,0-4.8-0.4-7-1.1c-9.8-3-16.9-12.1-16.9-22.8s7.1-19.8,16.9-22.8c2.2-0.7,4.6-1.1,7-1.1
+  c2.4,0,4.8,0.4,7,1.1c9.8,3,16.9,12.1,16.9,22.8S206.8,122.8,197.1,125.8z" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="elmt-ccatalogo__lateral" id="id_ccatalogo_filtros">
+  <div class="elmt_ventas_busca_1">
+    <div class="elmt_ventas_busca_header">
+      <div class="elmt_ventas_busca_titulo">&#10140; Filtrado de productos</div>
+      <div class="elmt_ventas_busca_cerrar">
+        <img src="triwus/imx/accions/bcancel-2.svg" alt = "[X]"
+              title = "Seguir comprando"
+              style = "width: 23px;cursor: pointer;" 
+              onclick = "prgf_iventas_0000()" />
+      </div>
+    </div>
+
+    <div class="novas2_busca_filtros">
+      [txt]
+      <div class="novas2_blimpar_buscador">
+        <button type="button" id="id_btn_clear" class="novas2_close_icon" style="display:none;" onclick="prgf_inovas_clear_2(this)">x</button>
+      </div>
+      <button type="button" class="novas2_boton_buscar" onclick="trwCat_filtrar('[action]')"></button>
+    </div>
+
+    <div class="elmt_ventas_busca_content">
+      <div id="trw_ventas_busca_subcats" class="elmt-ventas-busca-psubcats">
+        [psubcats]
+      </div>    
+      <div id="trw_ventas_busca_marcas" class="elmt-ventas-busca-pmarcas">
+        [pmarcas]
+      </div>
+  <!-- <div>
+        <div class='elmt_ventas_busca_4' style='margin: 17px 0 0 0;'>PRECIOS</div>
+          [pvp]
+        </div> -->
+    </div>
+
+    <div class="elmt_ventas_busca_footer">
+      <div class="elmt_ventas_busca_btnaceptar">
+        <button type="button" onclick="trwCat_filtrar('[action]')" title="Aceptar filtros"
+               class="button" style="white-space: nowrap;">
+          <span class="elmt_ventas_busca_titulo">✔</span>&nbsp;&nbsp;Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="elmt-backdrop" id="trw_iventas_00"  style='display: none;' onclick='prgf_iventas_0000()'></div>
+
+<script>
+  trwCat_colorea();
+</script>

@@ -1,0 +1,200 @@
+:root {
+    --mencats__sidebar-width: 300px;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9f9f9;
+    --accent-color: #6699cc;
+    --text-color: #333;
+    --border-color: #667;
+    --transition-speed: 0.3s;
+}
+
+/* body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; } */
+
+/* Sidebar Layout */
+.mencats__sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Oculto inicialmente */
+    height: 100vh;
+    z-index: 1000;
+    transition: left var(--transition-speed) ease;
+}
+
+.mencats__sidebar--open { left: 0; }
+
+.mencats__sidebar__container {
+    display: flex;
+    height: 100%;
+    filter: drop-shadow(5px 0 15px rgba(0,0,0,0.1));
+}
+
+/* Paneles */
+.mencats__sidebar__panel {
+    width: var(--mencats__sidebar-width);
+    height: 100%;
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.mencats__sidebar__panel--secondary {
+    background: var(--bg-secondary);
+    position: absolute;
+    left: var(--mencats__sidebar-width);
+    top: 0;
+    transform: translateX(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
+    z-index: -1;
+}
+
+/* Estado Activo del Segundo Panel */
+.mencats__sidebar--mencats__secondary-active .mencats__sidebar__panel--secondary {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Elementos de Lista */
+.mencats__sidebar__header {
+	padding: 20px 10px 20px 20px;
+	font-weight: bold;
+	border-bottom: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mencats__sidebar__close {
+    background: transparent;
+    border: none;
+    color: #667;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+
+.mencats__sidebar__close:hover {
+    background: #f0f0f0;
+    color: var(--accent-color);
+}
+
+.mencats__sidebar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.mencats__sidebar__item { border-bottom: 1px solid #f5f5f5; }
+
+.mencats__sidebar__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.1em;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background 0.2s;
+}
+
+.mencats__sidebar__link:hover { background: #f0f0f0; color: var(--accent-color); }
+
+.mencats__sidebar__link > a {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+/*
+.mencats__sidebar__link > div {
+    padding: 1.1em;
+}
+*/
+
+/* Flechas */
+.icon-arrow {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #667;
+    border-right: 2px solid #667;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.icon-arrow:hover {
+    background: #f0f0f0;
+    color: var(--accent-color);
+}
+
+.icon-arrow--down { transform: rotate(135deg); }
+.mencats__sidebar__item--open .icon-arrow--down { transform: rotate(-45deg); }
+
+/* Acordeón Nivel 3 */
+.mencats__sidebar__accordion {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: max-height var(--transition-speed) ease-out;
+}
+
+.mencats__sidebar__sublink {
+    display: block;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #667;
+    font-size: 0.9em;
+}
+
+.mencats__sidebar__sublink:hover { color: var(--accent-color); }
+
+/* Overlay */
+.mencats__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 900;
+}
+.mencats__overlay--show { display: block; }
+
+/* Responsive móvil */
+@media (max-width: 888px) {
+    .mencats__sidebar {
+        width: 100vw;
+    }
+
+    .mencats__sidebar__container {
+        width: 100vw;
+        position: relative;
+    }
+
+    .mencats__sidebar__panel {
+        width: 100vw;
+    }
+
+    .mencats__sidebar__panel--primary {
+        z-index: 1;
+    }
+
+    .mencats__sidebar__panel--secondary {
+        left: 0;
+        top: 0;
+        width: 100vw;
+        transform: translateX(100%);
+        z-index: 2;
+    }
+
+    .mencats__sidebar--mencats__secondary-active .mencats__sidebar__panel--secondary {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+

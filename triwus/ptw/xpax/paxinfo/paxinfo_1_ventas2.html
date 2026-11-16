@@ -1,0 +1,128 @@
+[tipo][id_oms][id_pax][id3]
+<div>
+
+  <fieldset>
+    <legend class="pcontrol_legend">Propiedades básicas</legend>
+    <div class="trw-form-2a" style="margin-top:1em;">
+      <div class="trw-form-1">
+        <label>Nombre</label>[nome]
+      </div>
+      <div class="trw-form-2a">
+        <div class="trw-form-1">
+          <label>Idioma</label>[sidioma]
+        </div>
+        <div class="trw-form-1">
+          <label>Permisos</label>[grupo]
+        </div>
+     </div>
+    </div>
+  </fieldset>
+
+
+  <fieldset>
+    <legend class="pcontrol_legend">Publicación</legend>
+    <div class="trw-form-2a" style="margin-top:1em;">
+      <div class="trw-form-3b">
+        <div class="trw-form-1">[estado]</div>
+        <div class="trw-form-1">[tdatapub]</div>
+        <div class="trw-form-1" style="width: 5em;">[thorapub]</div>
+      </div>
+      <div class="trw-form-2a" style="display: flex; gap:1.5em">
+        <div class="trw-form-1">[visible]</div>
+        <div class="trw-form-1">[puente]</div>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <legend class="pcontrol_legend">URLs</legend>
+    
+    <div class="trw-form-3b" style="margin-top:1em; color: #666;">
+      <div class="trw-form-1">
+          <label>Base</label>
+          <input type="text" value="[url]" readonly="true" />
+          <div style="display:flex;gap:1em;margin:0.2em 0 0 0.2em;">
+            <div class="lista_elemento_a" title="Copiar URL" onclick="carquivo_benlace('[url_site][url]')">Copiar</div>
+            <div class="lista_elemento_a" title="Abrir URL"  onclick="window.open('[url_site][url]', '_blank')">Abrir</div>
+          </div>
+      </div>
+
+      <div class="trw-form-1">
+          <label>Alternativa</label>
+          <input type="text" value="[url_limpa]" readonly="true" />
+          <div style="display:flex;gap:1em;margin:0.2em 0 0 0.2em;">
+            <div class="lista_elemento_a" title="Copiar URL" onclick="carquivo_benlace('[url_site][url_limpa]')">Copiar</div>
+            <div class="lista_elemento_a" title="Abrir URL"  onclick="window.open('[url_site][url_limpa]', '_blank')">Abrir</div>
+          </div>
+      </div>
+
+      <div class="trw-form-1">
+        <label>A medida</label>
+        [url_custom]
+        <div style="display:flex;gap:1em;margin:0.2em 0 0 0.2em;">[bCopiar] [bAbrir]</div>
+    </div>  
+  </fieldset>
+
+  <fieldset>
+    <legend class="pcontrol_legend">Metadatos</legend>
+    <div class="trw-form-2a" style="display:grid; grid-template-columns: 71% auto;margin-top: 1em;color: #666;">
+      <div>
+        <div class="trw-form-1">
+          <label>Título</label>[titulo]
+        </div>
+        <div class="trw-form-1">
+          <label>H1</label>[cat_h1]
+        </div>
+        <div class="trw-form-1">
+          <label>Descripción</label>[descricion]
+        </div>
+        <div class="trw-form-1">
+          <label>Robots</label>[robots]
+        </div>
+      </div>
+      <div class="trw-form-1">
+        <label>Logo</label>
+        <div style="border: 1px solid #ccc;padding: 0.2em;border-radius: 0.2em; height: 9em; width: 10em;">[logo]</div>
+          <div style="margin-top: 1em; margin-left: 0.5em; ">[bSupLogo]</div>
+      </div>
+    </div>      
+  </fieldset>
+
+  <fieldset>
+    <legend class="pcontrol_legend">Scripts de cabecera</legend>
+    <div class="trw-form-1">
+      <div style="margin-top:1em;">
+        [script_cabecera]
+        <span style="color: #666; font-size: smaller">Pega aqui los scripts de cabecera de terceros.</span>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend class="pcontrol_legend">Otras propiedades</legend>
+    <div class="trw_pcontrol_form_1">
+      <div style="flex-grow: 0.1">[cprops]</div>
+    </div>
+  </fieldset>
+</div>
+
+<!-- modal compartir link-->
+<div id="carquivo_benlace_msx_0" class="trw-pcontrol-backdrop" style="display: none">
+  <div class="trw-pcontrol-modal" style="width: 35vw">
+    <div class="trw-pcontrol-modal__header">
+      <span class="pcontrol_vm_bpechar" style="font-size: 1.7em" onclick="carquivo_benlace_pechar()">&times;</span>
+      <div>Enlace</div>
+    </div>
+    <div class="trw-pcontrol-modal__content" style="border-radius: 0 0 10px 10px; padding-block: 2em">
+      <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%; gap: 1em">
+        <textarea
+          id="carquivo_benlace_msx_1"
+          class="texto2"
+          readonly="true"
+          style="box-sizing: border-box; width: 100%; padding: 0.5em; resize: none"
+        ></textarea>
+        <a id="carquivo_benlace_msx_2" class="carquivo_benlace_btn">Copiar enlace</a>
+      </div>
+    </div>
+  </div>
+</div>

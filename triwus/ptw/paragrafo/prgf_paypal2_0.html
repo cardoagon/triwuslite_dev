@@ -1,0 +1,46 @@
+<style>
+.trw_pago_paypal2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin-bottom: 77px;
+}
+
+.trw_pago_paypal2 h1 {
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid #ec6e01;
+	border-bottom: 1px solid #ec6e01;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	margin-bottom: 3.3em;
+	color: var(--azul);
+}
+  
+.trw_pago_paypal2_btnr {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  max-width: 300px;
+}
+</style>
+
+[h0]
+
+<div class="trw_pago_paypal2">
+  <h1>Finalizar el pago con PayPal</h1>
+  
+  <div class="trw_pago_paypal2_btnr">
+    <h2>Escoje el método de pago Paypal</h2>
+    <div>
+      <div id="paypal-button-container"></div>
+    </div>
+  </div>
+  
+</div>
+
+<script async
+        src    = "https://www.paypal.com/sdk/js?components=buttons&client-id=[paypal_kpub]&currency=EUR"
+        onload = "trw_paypal_inicia_botonera()"></script>
+

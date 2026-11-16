@@ -1,0 +1,107 @@
+[vm_esperar][vm_pcontrol_aux]
+<div class='pcontrol_col_000'>
+  <div class='pcontrol_col_00'>
+
+    <div class='pcontrol_col_0a'>
+       <div style='position: sticky; top:0;' >
+         <div class='pcontrol_sec_1a'>
+            <img src="imx/pcontrol/logo-imx.svg"
+                 onclick="enviaEventoSubmit_str('findex;blogo', 'onclick', '', '')"
+                 style="cursor: pointer; height:2em;">
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/productos.svg' onclick="document.location.href = '?r=bxarticulos'" title="Productos" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/cc.svg' onclick="document.location.href = '?r=bxcc'" title="Campos custom" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/alma.svg' onclick="document.location.href = '?r=bxalmacen'" title="Portes y almacenes" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/ventas.svg' onclick="document.location.href = '?r=bxpedidos'" title="Ventas" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <a href='https://wiki.triwus.com' target='_blank'
+               alt='wiki: Página principal'
+               title='wiki: Página principal'>
+               <img src='imx/pcontrol/menu/axuda.svg' title="Ayuda" />
+            </a>
+         </div>
+      </div>
+
+    </div>
+
+    <div class='pcontrol_col_0'>
+       <div style='position: sticky; top:0; background-color: #0B70B1;' >
+         <div class='pcontrol_sec_1'>
+            <img src="imx/pcontrol/logo-txt.svg"
+                 onclick="enviaEventoSubmit_str('findex;blogo', 'onclick', '', '')"
+                 style="cursor: pointer; height:2em;">
+         </div>
+       
+         <div class='pcontrol_sec_0'>
+           <a class="xp_pestanha_inactiva"
+              onclick="document.location.href = '?r=bxarticulos'"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'"
+              style="text-decoration: none;">productos</a>
+         </div>
+       
+         <div class='pcontrol_sec_0'>
+           <a class="xp_pestanha_inactiva"
+              onclick="document.location.href = '?r=bxcc'"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'"
+              style="text-decoration: none;">Campos custom</a>
+         </div>
+       
+         <div class='pcontrol_sec_0'>
+           <a class="xp_pestanha_inactiva"
+              onclick="document.location.href = '?r=bxalmacen'"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'"
+              style="text-decoration: none;">portes y almacenes</a>
+         </div>
+         
+         <div class='pcontrol_sec_0'>
+           <a class="xp_pestanha_inactiva"
+              onclick="document.location.href = '?r=bxpedidos'"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'"
+              style="text-decoration: none;">ventas</a>
+         </div>
+
+         <div class='pcontrol_sec_0'>
+            <a href='https://wiki.triwus.com' target='_blank'
+               alt='wiki: Página principal'
+               title='wiki: Página principal'
+               class="xp_pestanha_inactiva"
+               onmouseover="this.style.textDecoration='underline'"
+               onmouseout="this.style.textDecoration='none'"
+               style="text-decoration: none;">
+              Ayuda
+            </a>
+         </div>
+
+<!--
+         [pinfoAlmacenCentral]
+-->
+       </div> 
+    </div>
+    
+    <div class='pcontrol_col_1'>[site_cabeceira][msx][pcontrol]</div>
+
+  </div>
+
+  [site_pe]
+</div>
+
+<div style='display: none;'>
+  <!-- mantemos esto aquí para que furrulen as migas -->
+  [btenda_0]
+</div>
+
+<script>
+  document.body.onscroll = function () { pcontrol_cab_0() };
+</script>

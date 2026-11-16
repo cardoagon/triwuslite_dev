@@ -1,0 +1,46 @@
+<a name="pcontrol_cab"></a>
+
+<div id = "pcontrol_cab0">
+  <div class="texto_cab1" style="flex-grow: 1;"><span style="color:#fff;">PANEL DE CONTROL > </span>[pdominio]</div>
+<!--
+  <div style="display: flex;gap: 0.3em;align-items: center;">
+    <div>[bversion_ico]</div>
+    <div>[bversion]</div>
+  </div>
+-->
+  <div style="width: 12%; margin-right: 1em;">[blogout]</div>
+</div>
+
+<div id   = 'pcontrol_cab1'
+     style='position: fixed; top: 3%; right: 15px; z-index: 3;
+            text-align: center;
+            display: none;'>
+
+  <div style='margin-bottom: 21px;'>
+    <button type="button" id="findex;blogout" name="findex;blogout"
+            onclick="enviaEventoSubmit(this, 'onclick', '¿ Desea salir del panel de control ?', '')"
+            onmouseover="this.className = 'boton_cab_login3b'"
+            onmouseout="this.className = 'boton_cab_login3'"
+            title="Cerrar la sesión triwus"
+            class="boton_cab_login3">X</button>
+  </div>
+
+  <div style='margin-bottom: 21px;'>
+    <button type="button"
+            onclick="document.location.href = '?r=bversion'"
+            onmouseover="this.className = 'boton_cab_login3b'"
+            onmouseout ="this.className = 'boton_cab_login3'"
+            title="Mantén tu site actualizado."
+            class="boton_cab_login3">V</button>
+  </div>
+
+  <div>
+    <button type="button"
+            onclick="trw_subir()"
+            onmouseover="this.className = 'boton_cab_login3b'"
+            onmouseout ="this.className = 'boton_cab_login3'"
+            title="Subir"
+            class="boton_cab_login3">&uarr;</button>
+  </div>
+  
+</div>

@@ -1,0 +1,87 @@
+.carrusel_marco_baleiro {
+  padding: 44px 0 44px 0;
+  font-size: 37px;
+}
+
+
+.carrusel_marco {
+  margin: 0;
+  padding: 0;
+}
+
+.carrusel_iten_marco {
+  text-align: center;
+
+  padding: 0 2%;
+
+  width: 96%;
+}
+
+.carrusel_iten_imaxe {
+  width:100%;
+}
+
+.carrusel_iten_titulo, .carrusel_iten_titulo_a {
+  border: 0;
+
+  width: 100%;
+  
+  overflow:hidden;
+
+  white-space: pre-wrap;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carrusel_iten_titulo_a {
+  text-decoration: underline;
+}
+
+.carrusel_iten_notas {
+  border: 0;
+
+  width: 100%;
+  
+  min-height: 3px;
+  max-height: 171px;
+
+  overflow:hidden;
+
+  white-space: pre-wrap;
+
+
+  padding: 2px 0 2px 0;
+
+  font-size: 12px;
+
+  text-align: left;
+  text-decoration: none;
+}
+
+.carrusel_iten_pvp {
+  max-height: 43px;
+  overflow:hidden;
+
+  white-space: pre-wrap;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carrusel_iten_pvp:after {
+  content: " €";
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+	z-index: 0;
+}
+
+.owl-carousel.owl-drag .owl-item {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}

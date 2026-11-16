@@ -1,0 +1,11 @@
+var ck_pt_min=2;var ck_match_1=/[^0-9a-zA-ZñÑçÇ]/;var ck_match_2=/[^0-9a-zA-ZñÑçÇ]+/;var ck_match_30=/[a-zA-ZñÑçÇ]/;var ck_match_31=/[a-zñç]/;var ck_match_32=/[A-ZÑÇ]/;var ck_match_33=/[a-zA-ZñÑçÇ]+/;var ck_match_40=/[0-9]/;var ck_match_41=/[0-9]+/;function analiza_contrasinal(k){var p=0;if(!analiza_contrasinal_1(k))return[k,p];p=1;if(!analiza_contrasinal_2(k))return[k,p];p=2;if(!analiza_contrasinal_3(k))return[k,p];p=3;if(!analiza_contrasinal_4(k))return[k,p];p=4;return[k,p]}
+function analiza_contrasinal_1(k){if(k.length<3)return!1;if(k.match(ck_match_30)&&k.match(ck_match_40))return!0;if(k.match(ck_match_40)&&k.match(ck_match_1))return!0;return(k.match(ck_match_30)&&k.match(ck_match_1))}
+function analiza_contrasinal_2(k){if(k.length<6)return!1;if(!k.match(ck_match_1))return!1;if(!k.match(ck_match_30))return!1;if(!k.match(ck_match_40))return!1;return!0}
+function analiza_contrasinal_3(k){if(k.length<7)return!1;if(!(k.match(ck_match_33)))return!1;if(!(k.match(ck_match_31)&&k.match(ck_match_32)))return!1;return!0}
+function analiza_contrasinal_4(k){if(k.length<12)return!1;if(!k.match(ck_match_41))return!1;if(!k.match(ck_match_2))return!1;return!0}
+function analiza_contrasinal_onpaste(p){setTimeout(function(){cknovo_pinta_2(p,"")},10)}
+function cknovo_pinta(e,p){var evento=(window.event)?event:e;var unicode=(evento.charCode)?evento.charCode:evento.keyCode;var tecla=String.fromCharCode(unicode);switch(unicode){case 8:break;case 9:return;case 13:return;case 37:case 38:case 39:case 40:return}
+cknovo_pinta_2(p,tecla)}
+function cknovo_pinta_2(p,tecla){var k=p.value;if(tecla.match(/\u0008/))
+k=k.substring(0,k.length-1);else k+=tecla;var r=analiza_contrasinal(k);var pt=r[1];var color_t="#b0b0b0";var color_1="#ba0000";var color_2="#F3AF04";var color_3="#00ba00";var color=color_1;if(pt>1)color=color_2;if(pt>2)color=color_3;for(var i=1;i<6;i++){var _d=document.querySelectorAll(`[cknovo_tdpt="${i}"]`);if(r[0]==""){_d[0].style.backgroundColor=color_t}else if(i>(pt+1)){_d[0].style.backgroundColor=color_t}else{_d[0].style.backgroundColor=color}}
+var hvalor=document.getElementById(p.id.substring(0,p.id.length-2)+"hvalor");hvalor.value=(pt>=ck_pt_min)?"1":"0"}

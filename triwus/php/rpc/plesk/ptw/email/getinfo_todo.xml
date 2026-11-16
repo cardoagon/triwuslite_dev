@@ -1,0 +1,13 @@
+<packet>
+ <mail>
+  <get_info>
+    <filter>
+      <site-id>[id_plesk]</site-id>
+    </filter>
+    <mailbox></mailbox>
+    <mailbox-usage></mailbox-usage>
+    <forwarding></forwarding>
+    <autoresponder></autoresponder>
+  </get_info>
+ </mail>
+</packet>

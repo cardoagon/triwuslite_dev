@@ -1,0 +1,20 @@
+<packet>
+<mail>
+<create>
+   <filter>
+      <site-id>[id_plesk]</site-id>
+      <mailname>
+        <name>[nome]</name>
+        <mailbox>
+          <enabled>true</enabled>
+        </mailbox>
+        <password>
+          <value>[k]</value>
+          <type>plain</type>
+        </password>
+        <antivir>off</antivir>
+      </mailname>
+   </filter>
+</create>
+</mail>
+</packet>

@@ -1,0 +1,40 @@
+.xp_cab {
+  display: none;
+}
+
+.xp_det {
+  grid-area: centro;
+  margin: 0;
+  /* padding: 0 1.3em 1.3em 0; */
+  /* max-width: 99em; */
+}
+
+.xp_pestanha_activa, .xp_pestanha_inactiva, .xp_pestanha_inactiva_over {
+  text-decoration: none;
+  text-align: left;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  margin: 0;
+  padding: .5em;
+
+  color: #0000ff;
+
+  display:inline;
+
+  white-space: nowrap;
+}
+
+.xp_pestanha_inactiva, .xp_pestanha_inactiva_over {
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+.xp_pestanha_activa {
+  cursor: default;
+
+  color: #ffffff;
+  background-color: #00008c;
+}

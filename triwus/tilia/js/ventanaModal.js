@@ -1,0 +1,12 @@
+var vm=null;var vm_capa0=null;var vm_pos_left=0;var vm_pos_top=0;var vm_pos_z=1000;var vm_height=0;function vm_posicionar(id_vm){vm=document.getElementById(id_vm);vm.style.top="77px";vm.style.left=((window.innerWidth-parseInt(vm.style.width))/2)+"px";vm.style.zIndex=vm_pos_z}
+function vm_modal(id_modal){vm_capa0=document.getElementById(id_modal);if(vm_capa0==null)return;vm_capa0.style.position="absolute";vm_capa0.style.top="0px";vm_capa0.style.left="0px";vm_capa0.style.width=window.innerWidth;vm_capa0.style.height=window.innerHeight;vm_capa0.style.zIndex=vm_pos_z-1;vm_capa0.style.display="inline";if(vm_IE){document.attachEvent("scroll",vm_scroll)}else{document.addEventListener("scroll",vm_scroll,!0)}}
+function vm_mousedown(event,vm_titulo,vm_div_height,vm_div_with){vm_pos_z++;vm_height=vm_div_height;vm.style.width=vm_div_with;vm.style.zIndex=vm_pos_z;if(vm_IE){document.attachEvent("onmousemove",vm_mousemove);document.attachEvent("onmouseup",vm_mouseup)}else{document.addEventListener("mousemove",vm_mousemove,!0);document.addEventListener("mouseup",vm_mouseup,!0)}
+vm_mousemove(event)}
+function vm_mousemove(event){vm_posRaton(event);var desfase_left=parseInt(vm.style.width)/2;var desfase_top=parseInt(vm_height)/2;vm.style.left=(vm_pos_left-desfase_left)+"px";vm.style.top=(vm_pos_top-desfase_top)+"px";vm_evitaEventos(event)}
+function vm_scroll(){var scroll=vm_getScrollXY();vm_capa0.style.width=window.innerWidth+scroll[0];vm_capa0.style.height=window.innerHeight+scroll[1]}
+function vm_posRaton(event){if(vm_IE){vm_pos_left=event.clientX+document.body.scrollLeft;vm_pos_top=event.clientY+document.body.scrollTop}else{vm_pos_left=event.clientX+window.scrollX;vm_pos_top=event.clientY+window.scrollY}
+if(vm_pos_left<0)vm_pos_left=0;if(vm_pos_top<0)vm_pos_top=0}
+function vm_evitaEventos(event){if(vm_IE){window.event.cancelBubble=!0;window.event.returnValue=!1}else event.preventDefault()}
+function vm_mouseup(event){if(vm_IE){document.detachEvent("onmousemove",vm_mousemove);document.detachEvent("onmouseup",vm_mouseup)}else{document.removeEventListener("mousemove",vm_mousemove,!0);document.removeEventListener("mouseup",vm_mouseup,!0)}}
+function vm_getScrollXY(){var scrOfX=0,scrOfY=0;if(vm_IE){scrOfY=document.documentElement.scrollTop;scrOfX=document.documentElement.scrollLeft}else{scrOfY=window.pageYOffset;scrOfX=window.pageXOffset}
+return[scrOfX,scrOfY]}

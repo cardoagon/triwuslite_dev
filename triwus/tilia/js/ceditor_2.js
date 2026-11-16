@@ -1,0 +1,1 @@
+function tilia_ceditor2_oninit(config){var setup={body_class:config.body_class,content_css:config.content_css,plugins:config.plugins,toolbar1:config.toolbar,menubar:config.menubar};var editor=new tinymce.Editor(config.selector,setup,tinymce.EditorManager);editor.on('init',function(e){this.hide()});editor.on('blur',function(e){this.hide()});editor.render()}

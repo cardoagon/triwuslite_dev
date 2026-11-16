@@ -1,0 +1,105 @@
+[vm_esperar][vm_pcontrol_aux]
+<div class='pcontrol_col_000'>
+  <div class='pcontrol_col_00'>
+    <div class='pcontrol_col_0a'>
+       <div style='position: sticky; top:0;' >
+         <div class='pcontrol_sec_1a'>
+            <img src="imx/pcontrol/logo-imx.svg"
+                 onclick="enviaEventoSubmit_str('findex;blogo', 'onclick', '', '')"
+                 style="cursor: pointer; height:2em;">
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/www.svg' onclick="document.location.href = '?r=bweb_0'" title="Mi Web" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/config.svg' onclick="document.location.href = '?r=bconfig_0'" title="Configuración" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img id="id_pcontrol_tenda_ico" src='imx/pcontrol/menu/tenda.svg' onclick="document.location.href = '?r=btenda_0'" title="Mi Tienda" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/nube.svg' onclick="document.location.href = '?r=bdrive_0'" title="Mis Documentos" />
+         </div>
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/logs.svg' onclick="document.location.href = '?r=blogs_0'" title="Ver accesos" />
+         </div>
+        <div class='pcontrol_sec_0a'>
+          <img src='imx/pcontrol/menu/api_icon.svg' onclick="document.location.href = '?r=bapis_1'" title="Configurar conexión a APIs" />
+        </div>
+<!--
+         <div class='pcontrol_sec_0a'>
+           <img src='imx/pcontrol/menu/stats.svg' onclick="document.location.href = '?r=bstats_0'" title="Estadísticas" />
+         </div>
+-->
+         <div class='pcontrol_sec_0a'>
+           <a href='https://wiki.triwus.com' target='_blank'
+               alt='wiki: Página principal'
+               title='wiki: Página principal'>
+               <img src='imx/pcontrol/menu/axuda.svg' title="Ayuda" />
+            </a>
+         </div>
+      </div>
+    </div>
+
+    <div class='pcontrol_col_0'>
+       <div style='position: sticky; top:0; background-color: #0B70B1;' >
+         <div class='pcontrol_sec_1'>
+            <img src="imx/pcontrol/logo-txt.svg"
+                 onclick="enviaEventoSubmit_str('findex;blogo', 'onclick', '', '')"
+                 style="cursor: pointer; height:2em;">
+         </div>
+         <div class='pcontrol_sec_0'>[bweb_0]</div>
+         <div class='pcontrol_sec_0'>[bconfig_0]</div>
+         <div class='pcontrol_sec_0'>[btenda_0]</div>
+         <div class='pcontrol_sec_0'>[bdrive_0]</div>
+         <div class='pcontrol_sec_0'>[blogs_0]</div>
+         <div class='pcontrol_sec_0'>[bapis_1]</div>
+<!--
+         <div class='pcontrol_sec_0'>[bstats_0]</div>
+-->
+
+         <div class='pcontrol_sec_0'>
+            <a href='https://wiki.triwus.com' target='_blank'
+               alt='wiki: Página principal'
+               title='wiki: Página principal'
+               class="xp_pestanha_inactiva"
+               onmouseover="this.style.textDecoration='underline'"
+               onmouseout="this.style.textDecoration='none'"
+               style="text-decoration: none;">
+              Ayuda
+            </a>
+         </div>
+       </div> 
+    </div>
+    
+    <div class='pcontrol_col_1'>[site_cabeceira][msx][pcontrol]</div>
+    
+  </div>
+  
+  [site_pe]
+</div>
+
+
+<script>
+  document.body.onscroll = function () { pcontrol_cab_0() };
+
+  trw_pcontrol_tenda_ico_ini();
+
+  function trw_pcontrol_tenda_ico_ini() {
+    var p0 = null;
+    var x0 = document.getElementById("findex;btenda_0");
+
+    if (x0 == null) return;
+    
+    if (x0.style.display != "none") return;
+
+
+    var p0 = x0.parentNode; p0.parentNode.removeChild(p0);
+
+
+    var x1 = document.getElementById("id_pcontrol_tenda_ico");
+
+    var p1 = x1.parentNode; p1.parentNode.removeChild(p1);
+  }
+</script>
+

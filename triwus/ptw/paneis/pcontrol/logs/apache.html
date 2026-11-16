@@ -1,0 +1,37 @@
+[hlogsevento]
+<div class="pcontrol_panel">
+  <div>
+   <div class="titulo1">Registro de accesos</div>
+   <hr size="2" color="#000000"/>
+   <div class="subtitulo2">Desde aquí puedes descargar los archivos de log de acceso a tu servidor Triwus, generados por el servidor web apache.</div>
+  </div>
+
+  <div>
+    <table
+      class="lista_00"
+      style="border: 1px solid #e6e6e6; margin-top: 27px"
+      width="100%"
+      cellspacing="0"
+      cellpadding="3"
+      border="0"
+      align="center"
+    >
+      <tr>
+        <th width="200px" style="text-align: left">Nombre</th>
+        <th style="text-align: right; width: auto">Tamaño</th>
+        <th width="105px" align="left">Modificado</th>
+        <th style="width: auto">&nbsp;</th>
+      </tr>
+      [lista_logs]
+    </table>
+  </div>
+</div>
+
+<script>
+  function pcontrol_logs_descargar(i) {
+    const o = document.getElementById("findex;clogs_apache;hlogsevento");
+    o.value = i;
+
+    enviaEventoMime(o, "onclick");
+  }
+</script>

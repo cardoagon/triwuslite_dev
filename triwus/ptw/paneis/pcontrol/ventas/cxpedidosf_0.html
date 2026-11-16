@@ -1,0 +1,89 @@
+<div class="trw-pcontrol-backdrop">
+  <div class="trw-pcontrol-modal">
+    <div class="trw-pcontrol-modal__header">
+      <span class="pcontrol_vm_bpechar" bpecha_id="findex;cxpedidos;cxpf;bCancelar" onclick="pcontrol_vm_bpechar(this)">✕</span>
+      Ficha de pedido
+    </div>
+    <div class="trw-pcontrol-modal__content">
+      <fieldset class="pcontrol_fieldset">
+        <legend class="pcontrol_legend">Pedido</legend>
+
+        <div class="trw-form-3c">
+          <div class="trw-form-1">
+            <label>#Pedido</label>[id_pedido]
+          </div>
+          <div class="trw-form-1">
+            <label>Fecha</label>[momento]
+          </div>
+          <div class="trw-form-1">
+            <label>Pagado</label>
+            <div style="display: flex;max-width: 9em;gap: 0.7em;">[pago_momento][ch_pagado]</div>
+          </div>
+        </div>
+
+        <div class="trw-form-2b">
+          <div class="trw-form-1">
+            <label>Estado</label>[gestado]
+          </div>
+          <div class="trw-form-1">
+            <label>Cambiar estado del pedido</label>[sestado]
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="pcontrol_fieldset">
+        <legend class="pcontrol_legend">Datos del cliente</legend>
+
+        <div class="trw-form-2b" style="grid-template-columns: 30% auto;">
+          <div class="trw-form-1">
+            <label>#Cliente</label>[id_cliente]
+          </div>
+          <div class="trw-form-1">
+            <label>Nombre</label>[nomcli]
+          </div>
+        </div>
+
+        <div class="trw-form-3c">
+          <div class="trw-form-1">
+            <label>Email</label>[email]
+          </div>
+          <div class="trw-form-1">
+            <label>Tlfn</label>[tlfn]
+          </div>
+          <div class="trw-form-1">
+            <label>CIF/NIF/NIE</label>[cnif_d_cliente]
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="pcontrol_fieldset">
+        <legend class="pcontrol_legend">Destino</legend>
+
+        <div class="trw-form-1 txt_adv" style="margin: 0 0 0.7em 0;">
+          [portes_aux]
+        </div>
+        <div class="trw-form-2b" style="grid-template-columns: 30% auto;">
+          <div class="trw-form-1">
+            <label>Destinatario</label>[destinatario]
+          </div>
+          <div class="trw-form-1">
+            <label>Dir.Postal</label>[destino]
+          </div>
+        </div>
+        <div class="trw-form-1">
+          <label>Observaciones</label>[prefs]
+        </div>
+    </fieldset>
+
+      <fieldset class="pcontrol_fieldset">
+        <legend class="pcontrol_legend">Forma de pago</legend>
+        <div class="trw-form-1">
+          [fpago_resumo]
+        </div>
+      </fieldset>
+    </div>
+    <div class="trw-pcontrol-modal__footer">
+      <div class="trw-pcontrol-modal__buttons">[bCancelar] [bticket]</div>
+    </div>
+  </div>
+</div>

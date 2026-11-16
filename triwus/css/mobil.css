@@ -1,0 +1,164 @@
+/*************************************************
+
+    Triwus Framework v.0
+
+    mobil.css
+
+    Author: Carlos Domingo Arias González
+
+    Copyright (C) 2017
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation version 3.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*************************************************/
+
+/* Sobreescribe algunas reglas css cando se arga a web nun dispositivo móbil
+ */
+
+.trw_col_1, .trw_col_2, .trw_col_3, .trw_col_4, .trw_col_33, .trw_col_66 {
+  width: 100%;
+}
+
+.trw_grid_0_1, .trw_grid_0_2, .trw_grid_0_3, .trw_grid_0_4, .trw_grid_0_5, .trw_grid_0_6 {
+  grid-template-columns: 100%;
+}
+
+.carrusel_boton {
+  margin:  0 9px;
+
+  height: 21px;
+  width:  21px;
+}
+
+
+/**** elmt_ventas
+ */
+
+.elmt_ventas_post_1 {
+  max-width: 78%;
+
+  margin-top: 15%;
+  max-height: 373px;
+/*
+  overflow: scroll;
+*/
+
+  box-shadow:0px 0px 8px -2px rgba(100,100,100,1);
+}
+
+.elmt_ventas_post_2 {
+  font-size: 121%;
+}
+
+.elmt_ventas_post_3 {
+  max-width: 101px; max-height: 121px;
+}
+
+
+
+/**** elmt_contacto
+ */
+/*
+.elmt_contacto_input, .elmt_contacto_textarea  {
+  border: 0;
+  border-bottom: 1px solid #333;
+
+  background-color: #eee;
+}
+
+.elmt_contacto_fila label  {
+  border: 0;
+
+  background-color: initial;
+}
+*/
+
+/**** cxcli2
+ */
+
+.cxcli2_caixa1 {
+  min-width: initial;
+  max-width: 100%;
+}
+
+
+/**** cpagar2
+ */
+
+.cpagar2_marco {
+    padding: 11px 2% 0 2%;
+}
+
+.cpagar2_form {
+  padding: 11px 0 0 0;
+}
+
+.cpagar2_form_destino {
+  width: initial;
+  min-width: initial;
+  margin-left: initial;
+}
+
+.cpagar2_fila {
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.cpagar2_fila legend {
+  margin-left: 5%;
+}
+
+.cpagar2_fila_2b {
+  width: 50%;
+}
+
+.cpagar3_nota2 {
+  width: 90%;
+}
+
+/*
+.lista_carro_imx, .lista_carro_imx_b {
+  width: 33px; height: 33px;
+}
+*/
+
+.lista_carro_aux_1 {
+  width: 98%;
+}
+
+.cpagar3_nota2 {
+  width: 99%;
+}
+
+/*
+.lista_carro_aux_2_0 {
+  font-size: 121%;
+  cursor: pointer;
+}
+*/
+/*
+.lista_carro_aux_2_1 {
+  display: inline-block;
+  padding-top: 7px;
+  margin-left: 11px;
+}
+*/
+/*
+.lista_carro_aux_2_2 {
+  padding: 0 7px 0 0;
+}
+*/
+/*
+.lista_carro_aux_3 {
+}
+*/

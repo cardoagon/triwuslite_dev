@@ -1,0 +1,68 @@
+[htest]
+<div class="pcontrol_panel">
+  <div>
+    <div class="titulo1">Conexión con Dropbox.</div>
+    <hr size="2" color="#000000"/>
+    <div class="subtitulo2">Para hacer uso de la API de Dropbox, debes proporcionar un client_id y client_secret.</div>
+  </div>
+
+  <div class="trw-form-1" style="flex-direction: row; gap:2em;">
+    <div class="trw-form-1" style="width: 20em;">
+      <label>client_id</label>
+     [dropbox_u]
+   </div>
+    <div class="trw-form-1" style="width: 20em;">
+       <label>client_secret</label>
+          [dropbox_k]
+    </div>
+  </div>
+  <div class="trw-form-1"style="flex-direction: row; gap:2em;">
+    [bCancelar][bAceptar][btest]
+  </div>
+</div>
+    
+    <div>[dtest]</div>
+</div>
+<!-- style="width:100%; padding: 1em; border: 1px solid #ddd; border-radius: 7px" -->
+
+<script>
+
+//~ console.log(window.location.search);
+
+function pcontrol_cdropbox_request_code(kpub, ruri) {
+  var url = `https://www.dropbox.com/oauth2/authorize?client_id=${kpub}&response_type=code&token_access_type=online&redirect_uri=${ruri}`;
+
+  //~ document.location = url;
+  window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=5,left=5");
+}
+
+
+function pcontrol_dropboxToken_evento() {
+  //* análise url.
+  var url = new URL(document.location);
+
+//~ console.log(url);
+  if ( !url.searchParams.has("dropbox_token") ) return; 
+  
+  //* garda o valor do parámetro token.
+  var token = url.searchParams.get("dropbox_token");
+  
+  //* reescribe url.
+  url.searchParams.delete("dropbox_token");
+
+  history.replaceState({id:"dropbox_token"}, "", url);
+  
+  //* solicita mostrar resultados.
+  var htest = document.getElementById("findex;capidbox;htest");
+
+  htest.value = token;
+
+  //~ enviaEventoSubmit(htest, "dropbox_token", null, null);
+  enviaEventoAJAX(htest, "dropbox_token", null);
+}
+
+
+pcontrol_dropboxToken_evento();
+
+
+</script>

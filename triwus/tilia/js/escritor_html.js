@@ -1,0 +1,5 @@
+function tilia_escritorhtml(msx){if(msx==undefined)return null;if(msx==null)return null;var _msx=JSON.parse(msx.value);console.log(_msx);switch(_msx.tipo){case "SRC":return tilia_escritorhtml_SRC(_msx);case "TIPO":return tilia_escritorhtml_TIPO(_msx)}
+return null}
+function tilia_escritorhtml_0(o,_msx){o.id=_msx.id;o.name=_msx.id;if(_msx._dato.clase!=null)o.classList.add(_msx._dato.clase);if(_msx._dato.style!=null)o.style=_msx._dato.style;return o}
+function tilia_escritorhtml_TIPO(_msx){var o=document.createElement(_msx._dato.element);if(o==undefined)return null;if(o==null)return null;o=tilia_escritorhtml_0(o,_msx);o.innerHTML=_msx._dato.valor;return o}
+function tilia_escritorhtml_SRC(_msx){var o=document.createElement("IMG");o=tilia_escritorhtml_0(o,_msx);o.src=_msx._dato.src;o.height=_msx._dato.h;o.width=_msx._dato.w;return o}

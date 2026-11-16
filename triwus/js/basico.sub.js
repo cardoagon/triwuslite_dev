@@ -1,0 +1,7 @@
+function subfs_redirect(k,sincro){parent.triwus_redirect(k,sincro)}
+function subfs_bAceptar(obxeto){if(obxeto==null)return!1;tipo_evento="onclick";confirma="";if(!validacion_envia(obxeto.id,confirma))return!1;var obxetoAJAX=__xml();obxetoAJAX.open('POST',document.forms[0].action,!0);obxetoAJAX.setRequestHeader('Content-Type','application/x-www-form-urlencoded');obxetoAJAX.send(valores_enviar_AJAX(obxeto,tipo_evento));obxetoAJAX.onreadystatechange=function(){if(obxetoAJAX.readyState==4)
+if(obxetoAJAX.status==200)subfs_bAceptar_resposta_AJAX();}}
+function subfs_bAceptar_resposta_AJAX(){parent.document.forms[0].method="post";parent.document.forms[0].submit()}
+function subfs_bPechar(obxeto){if(obxeto==null)return!1;tipo_evento="onclick";confirma="";if(!validacion_envia(obxeto.id,confirma))return!1;var obxetoAJAX=__xml();obxetoAJAX.open('POST',document.forms[0].action,!0);obxetoAJAX.setRequestHeader('Content-Type','application/x-www-form-urlencoded');obxetoAJAX.send(valores_enviar_AJAX(obxeto,tipo_evento));obxetoAJAX.onreadystatechange=function(){if(obxetoAJAX.readyState==4)
+if(obxetoAJAX.status==200)subfs_bpechar_resposta_AJAX();}}
+function subfs_bpechar_resposta_AJAX(){var prefixo="findex;detalle;cmsxdet;bpechar";parent.document.getElementById("findex;evento").value=prefixo+csubnome+"tipo=onclick"+csubnome+"ajax=0";parent.document.forms[0].method="post";parent.document.forms[0].submit()}

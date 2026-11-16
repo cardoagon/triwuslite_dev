@@ -1,0 +1,105 @@
+<style>
+.trw_pago_sumup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin-bottom: 77px;
+}
+
+.trw_pago_sumup h1 {
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid #ec6e01;
+	border-bottom: 1px solid #ec6e01;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	margin-bottom: 3.3em;
+	color: var(--azul);
+}
+  
+.trw_pago_sumup_btnr {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  max-width: 300px;
+}
+</style>
+
+[h0]
+
+<div class="trw_pago_sumup">
+  <h1>Finalizar el pago con tarjeta</h1>
+  
+  <div class="trw_pago_sumup_btnr">
+    <div>
+      <div id="sumup-card"></div>
+<!--
+      <button id="custom-submit-button" class="custom-button">Pay your order</button>
+-->
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  //~ document
+    //~ .getElementById("custom-submit-button")
+    //~ .addEventListener("click", function (event) {
+      //~ console.log("dfsdfsdfsdfsdfsdfsdf");
+    //~ });
+  
+  
+var SumUpCard;
+
+function trw_sumup_ini(checkoutId) {
+console.log('SumUp JS iniciado.');
+  SumUpCard.mount({
+    id: "sumup-card",
+    showFooter: false,
+    checkoutId: checkoutId,
+    country: "ES",
+    currency: "EUR",
+    locale: "es-ES",
+    onResponse: async function (type, body) {      
+      //~ await sumup_enviar_resposta(type, body)
+      console.log("Type", type);
+      console.log("Body", body);
+    },
+  });
+}
+
+async function sumup_enviar_resposta(type, body) {
+  console.log("Type", type);
+  console.log("Body", body);
+  
+  var formData = new FormData();
+
+  formData.append("findex;evento", sumup_evento()); 
+  //~ formData.append("sumup_op"     , 'set'); 
+  //~ formData.append("order_id"     , orderID        ); 
+
+  const o_fetch = {method: 'POST',
+                   body  : formData
+                  };
+
+//~ console.log(o_fetch);
+  const resposta = await fetch(`${document.forms[0].action}?ajax=1`, o_fetch);
+
+  if ( !resposta.ok ) {
+    throw "ERRO. sumup_enviar_resposta(). ( !resposta.ok ).";
+
+    return;
+  }
+
+}
+
+function sumup_evento() {
+  return document.querySelector("[sumup_evento]").id + csubnome + "tipo=onclick" + csubnome + "ajax=1";
+}
+
+</script>
+
+<script
+  type   = "text/javascript"
+  src    = "https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"
+  onload = "trw_sumup_ini('[checkoutId]')"></script>

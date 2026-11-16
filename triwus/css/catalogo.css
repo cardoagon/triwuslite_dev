@@ -1,0 +1,486 @@
+/* ANTERIORES */
+/* Icono que lanza o panel lateral dos filtros ( DESUSO lineas  467 a 510 de venta.css) */
+/* .ventas_prgf_0000 {
+}
+
+.ventas_prgf_0000a,
+.ventas_prgf_0000c {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ventas_prgf_0000b {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 27%;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  padding: 1.5em 1.5em 1.5em 0.8em;
+  border-radius: 0 50% 50% 0;
+  background-color: #c7c7cfbb;
+  cursor: pointer;
+  z-index: 2;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.ventas_prgf_0000c {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ventas_prgf_0001 {
+  margin: 77px 3% 99px 3%;
+  color: #000;
+  fill: #000;
+}
+
+.ventas_prgf_0000d {
+  fill: #000;
+  width: 1.9em;
+}
+
+.ventas_prgf_0000b.cxcli3_filter::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #c40000;
+  border-radius: 100vmax;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  border: 3px solid #fff;
+}
+ */
+
+
+
+/* *************************************/
+
+/* Panel de búsqueda por filtros ( DESUSO lineas 543 a 623 de venta.css) */
+/* .elmt-ccatalogo__lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  max-width: 350px;
+  height: 100%;
+  z-index: 20;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  transform: translate(-100%);
+  transition: all 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.elmt-ccatalogo__lateral.open {
+  transform: translate(0);
+}
+
+.elmt_ventas_busca_1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: left;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: 2;
+}
+
+.elmt_ventas_busca_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.elmt_ventas_busca_titulo {
+  color: #42951c;
+  font-size: 131%;
+  padding-left: 5px;
+}
+.elmt_ventas_busca_cerrar {
+}
+
+.elmt_ventas_busca_content {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.elmt_ventas_busca_content > div {
+  margin-top: 25px;
+}
+
+.elmt-ventas-busca-psubcats > div:nth-child(1) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.elmt-ventas-busca-pmarcas > div:nth-child(1) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.elmt_ventas_busca_footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid grey;
+  padding: 15px;
+} */
+/*********************************************/
+
+/* novas2 filtros. ( lineas 533 a 600 de basico.css)  */
+/* Usanse en prgf_iventas_busca.html e prgf_inovas_busca.html  ?? */
+/* .novas2_busca_filtros {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 1rem 0;
+}
+
+.novas2_busca_filtros input {
+  outline: none;
+  width: 72%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: inherit;
+  padding-left: 0.3rem;
+  padding-right: 22px;
+  transition: all 0.2s ease-in-out;
+}
+
+.novas2_busca_filtros input:active,
+.novas2_busca_filtros input:focus {
+  border: 1px solid #000;
+  outline: none;
+}
+
+.novas2_busca_filtros input::placeholder {
+}
+
+.novas2_boton_buscar {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 35px;
+  background-color: transparent;
+  background-image: url(imx/lupa-000.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.novas2_blimpar_buscador {
+  position: relative;
+}
+
+.novas2_close_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: -23px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 3px;
+  background-color: transparent;
+  color: #ccc;
+}
+
+.novas2_close_icon:hover {
+  cursor: pointer;
+  color: tomato;
+  background-color: #cccccc66;
+}
+ */
+/****************************************************************/
+
+/* ================================
+   panel lateral cbusca filtros
+ ================================= */
+
+/* icono lanza panel cbusca  ( clase anterior .ventas_prgf_0000b ) */
+.catalogo-btn-filtros {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  transition: transform 200ms ease-in-out;
+  left: -25px;
+  top: 40%;
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  padding: 1.5em 1.5em 1.5em 3em;
+  border-radius: 0 100vmax 100vmax 0;
+  background-color: var(--ico-filtros-fondo, #c7c7cf);
+  cursor: pointer;
+  z-index: 15;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.catalogo-btn-filtros:hover {
+  transition: transform 200ms ease-in-out;
+  transform: translateX(15%);
+}
+
+.catalogo-ico-filtros {
+  fill: #000;
+  width: 1.9em;
+}
+
+/* marca filtros seleccionados en catalogo-btn-filtros*/
+.catalogo-btn-filtros.cxcli3_filter::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #c40000;
+  border-radius: 100vmax;
+  position: absolute;
+  top: 34px;
+  right: 0;
+  border: 2px solid #fff;
+}
+
+/* panel catalago-cbusca */
+.catalogo-cbusca {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70vw;
+  max-width: 350px;
+  height: 100%;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  transform: translate(-100%);
+  transition: all 0.3s ease-out;
+  overflow-y: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.catalogo-cbusca.open {
+  transform: translate(0);
+}
+
+.catalogo-cbusca__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.catalogo-cbusca__header--row {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.catalogo-cbusca__titulo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.catalogo-cbusca__cerrar {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vmax;
+  transition: all 200ms;
+}
+
+.catalogo-cbusca__cerrar:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.catalogo-ico-cerrar {
+  border-radius: 100vmax;
+  font-size: 1.3rem;
+}
+
+.catalogo-cbusca__input {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  width: 98%;
+}
+
+.catalogo-cbusca__input input {
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  height: 2.3rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: initial;
+  padding-left: 0.5rem;
+  padding-right: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.catalogo-cbusca__input input:active,
+.catalogo-cbusca__input input:focus {
+  border: 1px solid #000;
+  outline: none;
+}
+
+.cbusca-input-limpa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 3px;
+  background-color: transparent;
+  color: #ccc;
+}
+
+.cbusca-input-limpa:hover {
+  cursor: pointer;
+  color: tomato;
+  background-color: #cccccc66;
+}
+
+.cbusca-btn-lupa {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-left: 1px solid #ccc;
+  padding: 0;
+  width: 40px;
+  background-color: transparent;
+  background-image: url(imx/lupa-000.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* filtros */
+.catalogo-cbusca__filtros {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-inline: 0.5rem;
+  padding-bottom: 7em;
+  overflow-y: scroll;
+  max-height: 80%;
+}
+
+
+.cbusca-filtro {
+  box-sizing: border-box;
+}
+
+.cbusca-filtro:empty {
+  display: none;
+}
+
+/* clase css anterior, elmt_ventas_post_4 */
+.cbusca-filtro__titulo {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.catalogo-cbusca__footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  padding: 1rem .5rem;
+  position: fixed;
+  width: 95%;
+  bottom: 0;
+  background-color: #fff;
+}
+
+
+/* ================================
+   Catálogo
+ ================================= */
+
+.catalogo-titulo {
+  font-size: 24px;
+}
+
+.catalogo-titulo h1 {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid rgb(236, 110, 1);
+  border-bottom: 1px solid rgb(236, 110, 1);
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  margin-bottom: 3.3em;
+}
+
+.catalogo-migas {
+  margin-bottom: 2.7em;
+}
+
+.catalogo-lista {
+}
+
+.catalogo-paginador {
+  display: flex;
+  padding: 1.7em 0;
+  align-items: center;
+  justify-content: center;
+}

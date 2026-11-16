@@ -1,0 +1,35 @@
+[href]
+<div id="[selector]" name="[selector]" onclick="tinymce.get('[selector]').show()" style="cursor: pointer;">[texto]</div>
+
+<script>
+
+function tilia_wysiwyg_init(selector) {
+  var setup = {
+                body_class: [body_class],
+                content_css: [content_css],
+
+                plugins: [
+                    "advlist autolink lists link image charmap print preview anchor",
+                    "searchreplace visualblocks code fullscreen textcolor",
+                    "insertdatetime media table contextmenu paste"
+                ],
+
+                toolbar1: "undo redo | bold italic | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist outdent indent | link image",
+                toolbar2: "fontselect | fontsizeselect",
+
+              };
+
+  var editor = new tinymce.Editor(selector, setup, tinymce.EditorManager);
+
+  editor.on('init', function(e) { if ([onload_hide]) this.hide(); });
+
+  editor.on('blur', function(e) { if ([onblur_hide]) this.hide(); });
+
+
+  editor.render();
+}
+
+tilia_wysiwyg_init('[selector]');
+
+</script>
+

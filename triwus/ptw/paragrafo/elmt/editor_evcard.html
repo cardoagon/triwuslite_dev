@@ -1,0 +1,74 @@
+<div class="trw-form-1">
+    Añade el componente VCARD a la página web para hacer más visibles tus datos de contacto (a humanos y bots).&nbsp;
+    <a href="https://wiki.triwus.com/index.php?title=Carruseles" target="_blank" class="pcontrol_wiki" alt="wiki: Carruseles" title="wiki: Carruseles">¿Necesitas ayuda?</a>
+ 
+
+  <!--
+    Un VCARD actúa en dos direcciones:
+    <ol>
+      <li>Añade a tu página un microdato, que permite a los buscadores, encontrar y clasificar correctamente tus datos de contacto.</li>
+      <li>Para los humanos, genera un QR, para que cualquiera pueda añadir fácilmente tus datos de contacto a tu teléfono.</li>
+    </ol>
+    -->
+</div>
+<fieldset class="fset-editor">
+  <legend class="editor_legend fset-editor__legend">Escribe tus datos de contacto</legend>
+  <div class="trw-form-2a" style=>
+    <div class="trw-form-1" style="width: 94%;">
+        <label>Nombre</label>
+        [nome]
+    </div>
+    <div class="trw-form-1">
+    <label>Teléfono</label>
+        [tlfn]   
+    </div>
+    <div class="trw-form-1" style="width: 94%;">
+    <label>Razón social</label>
+        [rs]
+    </div>  
+    <div class="trw-form-1">
+    <label>Email</label>
+        [email]
+    </div>
+  </div>
+  <div class="trw-form-1">
+    <label>Dirección postal</label>
+        [dirpostal]
+  </div>
+  <div class="trw-form-3b">
+    <div class="trw-form-1"> 
+      <label>Código postal</label>
+       [cp]
+    </div>
+    <div class="trw-form-1">
+      <label>Localidad</label>
+        [localidade]
+    </div>
+    <div class="trw-form-1">
+      <label>País</label>
+        [pais]
+    </div>
+  </div>  
+    <div class="trw-form-1" style="width: 63%;">
+        <label>URL</label>
+        [www]
+    </div>
+  
+</fieldset>
+
+<fieldset class="fset-editor">
+  <legend class="editor_legend fset-editor__legend">Genera el código QR</legend>
+    <div class="trw-form-3b" style="gap:1.5em;">
+      <div class="trw-form-1">[qr]</div>
+      <div class="trw-form-1">        
+        <label>Tamaño</label>
+        [stalla]
+      </div>
+      <div class="trw-form-1">
+        <label>Alineación</label>
+        <div class="vcard_align">[cstyle]</div>
+      </div>
+    </div>    
+  <div>[erro]</div>
+</fieldset>
+

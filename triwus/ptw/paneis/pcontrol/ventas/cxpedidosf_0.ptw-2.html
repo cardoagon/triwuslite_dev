@@ -1,0 +1,154 @@
+<style>
+  .trw_cxpedf_marco {
+    position: fixed;
+    z-index: 1;
+    padding: 2% 1%;
+    margin: 0 0 0 2%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #efefef;
+    border-radius: 7px;
+    box-shadow:0px 0px 8px -2px rgba(100,100,100,0.9);
+    top: 1%;
+    min-width: 555px;
+  }
+
+<!--
+  .trw_cxpedf_dato {
+    display: inline-block;
+    background-color: #eee;
+    padding: 1px 0; margin: 1px 0;
+    border: 0;
+    border-bottom: #333 1px solid;
+    min-width: 77px;
+    min-height: 19px;
+  }
+
+  .trw_cxpedf_dato_ta {
+    white-space: pre-wrap;
+    width: 95%;
+    min-height: 69px;
+  }
+-->
+</style>
+
+
+<div class='trw_cxpedf_marco'>
+
+  <fieldset>
+    <legend>Ficha del pedido</legend>
+
+
+    <div class="trw_pcontrol_form_0">
+      <div class="trw_pcontrol_form_1">
+        <div>
+          <label>#Ticket</label>[id_pedido]
+        </div>
+        <div>
+          <label>Fecha</label>[momento]
+        </div>
+        <div>
+          <label>Pagado</label>[momento_pago]
+        </div>
+        <div>
+          <label>#Factura</label>[id_factura]
+        </div>
+      </div>
+      
+      <div class="trw_pcontrol_form_1">
+        <div style="width: 49%;">
+          <label>Estado</label>[gestado]
+        </div>
+        <div style="width: 49%;">
+          <label>Cambiar estado del pedido</label>[sestado]
+        </div>
+      </div>
+    </div>
+    
+<!--
+      <table class=texto3 width=100% border=0 cellspacing=0  cellpadding=2 style='padding: 0 5px;'>
+        <tr valign='middle'>
+          <td width=20%>#Ticket<br>[id_pedido]</td>
+          <td width=25%>Fecha<br />[momento]</td>
+          <td width=*>Pagado<br /><div style='display: inline-block;'>[ch_pagado]</div>[momento_pago]</td>
+          <td width=20%>#Factura<br />[id_factura]</td>
+        </tr>
+      </table>
+-->
+
+<!--
+      <table class=texto3 width=100% border=0 cellspacing=0  cellpadding=2 style='padding: 0 5px; margin-top: 7px;'>
+        <tr valign=top>
+          <td width=37% >Estado<br />[gestado]</td>
+          <td width=* style='padding-left: 17px;'>Cambiar estado del pedido<br />[sestado]</td>
+        </tr>
+      </table>
+-->
+
+      <fieldset class='fieldset_2'>
+        <legend>Datos del cliente</legend>
+
+        <div class="trw_pcontrol_form_0">
+          <div class="trw_pcontrol_form_1">
+            <div>
+              <label>#Cliente</label>[id_cliente]
+            </div>
+            <div>
+              <label>Email</label>[email]
+            </div>
+            <div>
+              <label>Tlfn</label>[tlfn]
+            </div>
+          </div>
+          
+          <div class="trw_pcontrol_form_1">
+            <div>
+              <label>CIF/NIF/NIE</label>[cnif_d_cliente]
+            </div>
+            <div>
+              <label>Nombre</label>[nomcli]
+            </div>
+          </div>
+        </div>
+<!--
+        <table class=texto3 width=100% border=0 cellspacing=0  cellpadding=2>
+          <tr>
+            <td width=20%>#Cliente<br>[id_cliente]</td>
+            <td width=55%>Email<br />[email]</td>
+            <td width=*>Tlfn<br />[tlfn]</td>
+          </tr>
+          <tr>
+            <td width=20%>CIF/NIF/NIE<br />[cnif_d_cliente]</td>
+            <td width=* colspan=2>Nombre<br />[nomcli]</td>
+          </tr>
+        </table>
+-->
+      </fieldset>
+
+      <fieldset class='fieldset_2'>
+        <legend>Destino <span style="font-weight: normal; font-size: 95%;">(Destinatario, dirección postal y preferencias)</span></legend>
+
+        <table class=texto3 width=100% border=0 cellspacing=0  cellpadding=2>
+          <tr>
+            <td width=*>[portes_aux]</td>
+          </tr>
+          <tr>
+            <td width=*>[destino]</td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset class='fieldset_2'>
+        <legend>Forma&nbsp;de&nbsp;Pago</legend>
+        
+        <table class=texto3 width=100% border=0 cellspacing=0  cellpadding=2>
+          <tr>
+            <td width=*>[fpago_resumo]</td>
+          </tr>
+        </table>
+      </fieldset>    
+
+  </fieldset>
+
+  <div style='display: flex; justify-content: space-evenly;margin: 1.3em 0 0 0;'>[bticket][bAceptar]</div>
+</div>
+

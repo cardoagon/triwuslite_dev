@@ -1,0 +1,12 @@
+<packet>
+<site>
+    <get>
+       <filter>
+            <name>[dominio]</name>
+       </filter>
+       <dataset>
+            <gen_info/>
+       </dataset>
+    </get>
+</site>
+</packet>

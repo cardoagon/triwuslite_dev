@@ -1,0 +1,13 @@
+var ventas2_paxina=15;var ventas2_scroll_i=0;var ventas2_scroll_switch=-1;var ventas2_cli=null;function ventas2_ini(cxcli){ventas2_cli=cxcli;if(cxcli.busca.a)return;ventas2_b0_inicia(cxcli,!0)}
+function ventas2_b0_inicia(cxcli,reiniciar){if(reiniciar==undefined)reiniciar=!0;cxcli.limpar=reiniciar;if(reiniciar)ventas2_scroll_i=0;ventas2_scroll_activar(!1);var c=document.getElementById(cxcli.id_js+cnome+"_hb");if(c==null)return;c.value=(reiniciar)?1:-1;enviaEventoAJAX(c,"onload","",function(){ventas2_b0_resposta(cxcli)},null)}
+function ventas2_b0_resposta(cxcli){tilia_fin_cargado(!1);ventas2_cli=cxcli;prgf_iventas_0000_colorea();if(cxcli.limpar==1)tilia_scroll_top(-9999,1);var id_cxcli=ventas2_idjs();var c=document.getElementById(id_cxcli+cnome+"_hb");if(c==null)return;var _ida=JSON.parse(c.value);c.value="";ventas2_ofertas_post(id_cxcli,_ida,0)}
+function ventas2_ofertas_post(id_js,_ida,i_0){if(_ida==-1)return;if(_ida.length==0){tilia_fin_cargado(!0);var d=document.getElementById("cxcli3-lanuncios-0-panel");if(d==null)return;if(ventas2_cli.limpar)d.innerHTML="";return}
+if(i_0>=_ida.length){ventas2_scroll_activar(_ida.length==ventas2_cli.pax_t);return}
+if(id_js==undefined){id_js=ventas2_idjs();if(id_js==null)return}
+var c=document.getElementById(id_js+cnome+"_h0");if(c==null)return;var i_p=i_0+ventas2_paxina;if(i_p>_ida.length)i_p=_ida.length;var _ida_2=_ida.slice(i_0,i_p);if(_ida_2.length==0)return;c.value=_ida_2;enviaEventoAJAX(c,"onload","",function(){ventas2_ofertas_response(id_js,_ida,i_p)},null)}
+function ventas2_ofertas_response(id_js,_ida,i_p){tilia_fin_cargado(!0);var c0=document.getElementById(id_js+cnome+"_h1");if(c0==null)return;var c1=document.getElementById("cxcli3-lanuncios-0-panel");if(c1==null)return;if(i_p<=ventas2_paxina){if(ventas2_cli.limpar)c1.innerHTML="";ventas2_cli.limpar=!0}
+c1.innerHTML+=c0.innerHTML;c0.innerHTML="";ventas2_ofertas_post(id_js,_ida,i_p)}
+function ventas2_idjs(){var d=document.getElementById("trw-catalogo-id");if(d==null)return null;return d.value}
+function ventas2_scroll_activar(b){if(ventas2_scroll_switch==-1)document.addEventListener("scroll",function(){ventas2_scroll_control()});ventas2_scroll_switch=(b)?1:0}
+function ventas2_scroll_control(){if(ventas2_scroll_switch!=1)return;var m=0.6+(ventas2_scroll_i/50);if(m>0.88)m=0.88;var a=window.scrollY;var b=document.body.clientHeight*m;if(a>b){ventas2_scroll_i++;tilia_fin_cargado(!1);ventas2_scroll_activar(!1);ventas2_b0_inicia(ventas2_cli,!1)}}
+function ventas2_bcarrito_post(n,p){var c=document.getElementById(n);if(c==null)return;c.value=p;enviaEventoAJAX(c,"onclick","",null,null)}

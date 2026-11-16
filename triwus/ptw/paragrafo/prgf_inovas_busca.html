@@ -1,0 +1,80 @@
+[hevento]
+<div class="elmt_ventas_busca_1">
+  <div class="elmt_ventas_busca_header">
+    <div class="elmt_ventas_busca_titulo">Buscar</div>
+    <div class="elmt_ventas_busca_cerrar">
+      <img src="triwus/imx/accions/bcancel-2.svg" alt = "[X]"
+            title = "Pechar"
+            style = "width: 23px;cursor: pointer;" 
+            onclick = "prgf_iventas_0000()" />
+    </div>
+  </div>
+
+  <div class="novas2_busca_filtros">
+    [txt]
+    <div class="novas2_blimpar_buscador">
+      <button type="button" id="id_btn_clear" class="novas2_close_icon" style="display:none;" onclick="prgf_inovas_clear_2(this)">&#x2715;</button>
+    </div>
+    <button type="button" class="novas2_boton_buscar" onclick="prgf_inovas_url_f()"></button>
+  </div>
+
+  <div class="elmt_ventas_busca_content">
+    <div id="trw_novas2_busca_etq_1" class="elmt-ventas-busca-psubcats">
+      [petq*1]
+    </div>    
+    <div id="trw_novas2_busca_etq_2" class="elmt-ventas-busca-psubcats">
+      [petq*2]
+    </div>    
+    <div id="trw_novas2_busca_etq_3" class="elmt-ventas-busca-pmarcas">
+      [petq*3]
+    </div>
+  </div>
+
+  <div class="elmt_ventas_busca_footer">
+    <div class="elmt_ventas_busca_btnaceptar">
+      <button type="button" onclick="prgf_inovas_url_f()" title="Aceptar filtros"
+              class="button" style="white-space: nowrap;">
+        <span class="elmt_ventas_busca_titulo">&#x2713;</span>&nbsp;&nbsp;Aceptar</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  
+const txtBtnAceptar = {
+    "es": " Aceptar",
+    "ca": " Acceptar",
+    "fr": " Accepter",
+    "gl": " Aceptar",
+    "pt": " Aceitar",
+    "en": " Accept"
+};
+
+const lang = document.documentElement.lang; 
+
+const btn = document.querySelector('button[onclick="prgf_inovas_url_f()"][title="Aceptar filtros"].button');
+
+if (btn) {
+  let nuevoTitulo = txtBtnAceptar[lang] ? txtBtnAceptar[lang] : "\u2713 Aceptar"; // por defecto (es)
+  btn.innerText =  "\u2713" + nuevoTitulo;
+  btn.title = nuevoTitulo;
+}
+
+
+
+
+function prgf_inovas_clear(o) {
+  let btn = document.getElementById("id_btn_clear");
+  if(o.value !== "") btn.style.display = "flex";
+  else btn.style.display = "none";
+}
+
+function prgf_inovas_clear_2(btn) {
+  let o = document.querySelector("input[type=text]");
+  o.value = "";
+  btn.style.display = "none";
+  //~ prgf_inovas_url_f();
+}
+
+</script>

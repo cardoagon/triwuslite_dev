@@ -1,0 +1,58 @@
+Header always set Content-Security-Policy "default-src https: data: 'unsafe-inline' 'unsafe-eval'"
+#  Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-Xss-Protection "1; mode=block"
+Header always set X-Content-Type-Options nosniff
+
+#  Header always set X-Frame-Options DENY
+#  Header always set X-Frame-Options SAMEORIGIN
+#  Header always set X-Content-Type-Options nosniff
+
+
+DirectoryIndex [url-index]
+
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+
+[urls-custom]
+
+RewriteRule ^(.*).php?(.*)$ sites/[site_n]/$1.php?m=$2 [L]
+
+RewriteRule ^producto\/([0-9]+)\/$ sites/[site_n]/producto.php?p=$1 [L]
+RewriteRule ^producto\/(.*)\/([0-9]+)\/$ sites/[site_n]/producto.php?p=$2 [L]
+RewriteRule ^almacen\/(.*)\/([0-9]+)\/$ sites/[site_n]/almacen.php?a=$2 [L]
+RewriteRule ^confirmar\/(.+)\/$ sites/[site_n]/confirmar.php?c=$1 [L]
+RewriteRule ^buscador\/(.+)\/$ sites/[site_n]/buscador.php?b=$1 [L]
+RewriteRule ^(.*)\/(.*)\/m=([0-9]+)\/$ sites/[site_n]/$1.php?m=$3 [L]
+
+#  RewriteRule ^(.*)\/catalmac\/(.*)\/$ sites/[site_n]/$1.php?$2 [L]
+#  RewriteRule ^(.*)\/catcateg\/(.*)\/$ sites/[site_n]/$1.php?$2 [L]
+#  RewriteRule ^(.*)\/catmarca\/(.*)\/$ sites/[site_n]/$1.php?$2 [L]
+#  RewriteRule ^(.*)\/catnovas\/(.*)\/$ sites/[site_n]/$1.php?$2 [L]
+#  RewriteRule ^(.*)\/catventa\/(.*)\/$ sites/[site_n]/$1.php?$2 [L]
+
+#  RewriteRule ^(.*)\/ctlg=((ca|de|en|es|fr|gl|pt)+)(.*)\/$ $1.php?ctlg=$2$3 [L]
+
+RewriteRule ^((ca|de|en|es|fr|gl|pt)+)$ /?l=$1 [L]
+RewriteRule ^((ca|de|en|es|fr|gl|pt)+)\/$ /?l=$1 [L]
+RewriteRule ^([çÇñÑa-zA-Z0-9-]*)\/((ca|de|en|es|fr|gl|pt)+)\/$ sites/[site_n]/$1.php?l=$2 [L]
+
+RewriteRule ^([çÇñÑa-zA-Z0-9-]*)\/([0-9]+)\/$ sites/[site_n]/$1.php?k=$2 [L]
+
+RewriteRule ^([çÇñÑa-zA-Z0-9-]*)\/(.+)\/$ sites/[site_n]/$1.php?n=$2 [L]
+
+RewriteRule ^(.*)\/$ sites/[site_n]/$1.php [L]
+
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+
+
+</IfModule>

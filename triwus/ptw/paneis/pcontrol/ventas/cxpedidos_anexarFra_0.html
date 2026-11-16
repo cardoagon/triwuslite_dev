@@ -1,0 +1,72 @@
+<div class="trw-backdrop">
+  <div class="trw-modal">
+    <div class="trw-modal__header">
+      <span class="trw-modal__bpechar" bpecha_id="findex;cxpedidos;cxpa;bCancelar" onclick="pcontrol_vm_bpechar(this)">✕</span>
+      Anexar factura del pedido: <b>[pedido]</b>.
+    </div>
+    <div class="trw-modal__content">
+      [fpdf]
+
+      <fieldset class="fieldset_2">
+        <legend>Datos de facturación</legend>
+      
+        <div class="trw_pcontrol_form_1">
+          <div class="txt_adv" style='flex-grow: 1;'>
+            [datos_f]
+          </div>
+        </div>
+      </fieldset>
+      
+      <fieldset class="fieldset_2">
+        <legend>Factura PDF</legend>
+      
+        <div class="trw_pcontrol_form_1">
+          <div style='flex-grow: 1;'>
+            <label>* #Factura</label>[fraref]
+          </div>
+          <div style='flex-grow: 0;'>
+            <label>&nbsp;</label><div style='display: flex; gap: 0.3em;'>[bbaixar]</div>
+          </div>
+        </div>
+        
+        <div class="trw_pcontrol_form_1">
+          <div>
+            [bsup]
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset_2">
+        <legend>Email al cliente</legend>
+      
+        <div class="trw_pcontrol_form_1">
+          <div style='flex-grow: 1;'>
+            <label>Email</label>[temail]
+          </div>
+        </div>
+        
+        <div class="trw_pcontrol_form_1">
+          <div style='flex-grow: 1;'>
+            <label>Asunto</label>[tasunto]
+          </div>
+        </div>
+        
+        <div class="trw_pcontrol_form_1">
+          <div style='flex-grow: 1;'>
+            <label>Mensaje</label>[tbody]
+          </div>
+        </div>
+        
+        <div class="trw_pcontrol_form_1">
+          <div>
+            [bEnviar]
+          </div>
+        </div>
+      </fieldset>
+
+    </div>
+    <div class="trw-modal__footer">
+      <div class="trw-modal__buttons">[bCancelar]</div>
+    </div>
+  </div>
+</div>

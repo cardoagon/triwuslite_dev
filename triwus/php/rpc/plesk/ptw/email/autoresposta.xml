@@ -1,0 +1,19 @@
+<packet>
+<mail>
+<update>
+  <set>
+   <filter>
+      <site-id>[id_plesk]</site-id>
+      <mailname>
+        <name>[nome]</name>
+        <autoresponder>
+          <enabled>[ok]</enabled>
+          <subject>[asunto]</subject>
+          <text>[txt]</text>
+        </autoresponder>
+      </mailname>
+   </filter>
+  </set>
+</update>
+</mail>
+</packet>

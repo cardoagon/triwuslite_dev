@@ -1,0 +1,29 @@
+[paux]
+
+<input id="ecarrusel_paso" type="hidden" value="u" />
+[acepta_scan]
+
+<fieldset class="fset-editor">
+  <legend class="editor_legend">Escanear URL</legend>
+  
+  <div class="trw-form-1">
+    <label>Pega una URL</label>
+    [edita_url]
+  </div>
+  
+  <div class="trw-form-1">
+    <div style="display: flex;gap: 1.3em;align-items: center;">
+      [lurl] <!-- Boton 'escanear' -->
+      <img class="trw-loading" id='ecarrusel_cargando' src='imx/cargando.gif' style='display: none;' />
+    </div>
+  </div>   
+</fieldset>
+
+[scan_url]
+  
+<style>
+  .trw-loading {
+    width: 10%;
+    height: 10%;
+  }
+</style>

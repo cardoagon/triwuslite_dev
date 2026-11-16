@@ -1,0 +1,176 @@
+
+.lista_00 {
+  font-size: 1em;
+  border: 1px solid #ccc;
+}
+
+.lista_00 th {
+  color: var(--blanco);
+  background-color: var(--c-trw-3);
+  padding: 5px 15px;
+  text-align: left;
+}
+
+.lista_00 tr:hover {
+  background-color: #eaf9ff;
+}
+
+/*
+.lista_00 tr:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+*/
+
+.lista_00 td {
+  box-sizing: border-box;
+  /* font-family: arial;
+  padding: 0 7px;
+  height: 1.7em; */
+  padding: 5px 15px;
+  white-space: nowrap;
+  max-width: 20vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.lista_00 tfoot tr:hover {
+  background-color: initial;
+}
+
+.lista_00 tfoot td {
+  border-top: 1px solid #ccc;
+}
+
+/*
+.lista_01 tbody{
+  display:block;
+  overflow:auto;
+  height:200px;
+  width:100%;
+}
+
+.lista_01 thead tr{
+  display:block;
+}
+*/
+
+.lista_elemento_a {
+  color: #0000ba;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lista_seleccion {
+  text-transform: none;
+  background-color: #ffcc00;
+}
+
+.lista_eliminar {
+}
+
+.lista_bmais {
+  border: 0;
+  border-radius: 2px;
+
+  width: 22px;
+
+  cursor: pointer;
+
+  padding: 1px;
+
+  text-align:center;
+
+  background-color: #444444;
+  background-color: transparent;
+}
+
+.lista_paxinador_boton, .lista_paxinador_boton_r {
+  border: 0;
+  background-color: transparent;
+}
+
+.lista_paxinador_boton {
+  cursor: pointer; color: #000;
+}
+
+.lista_paxinador_boton_r {
+  color: #aaa;
+}
+
+.lista_baleira {
+  margin: 1em 0;
+}
+
+.lista_unidades {
+/*
+  color: #333;
+*/
+  font-size: 0.9em;
+  padding-left: 0.3em;
+}
+
+.lista_grid_0 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.7em 1.7em;
+  align-items: center;
+}
+
+.lista_check_0 {
+  text-align: center;
+  font-size: 1.3em;
+}
+/*
+.lista_pmsc_prezos_0 {
+  display: grid;
+  grid-template-columns: 2.3em auto;
+  grid-template-rows: 1.7em 1.7em;
+  align-items: center;
+}
+
+.lista_pmsc_prezos_0 > div:nth-child(2n + 1) {
+  color: #777;
+}
+
+.lista_pmsc_prezos_0 > div:nth-child(2n) {
+  justify-self: right;
+  margin-right: 3em;
+}
+
+
+.lista_mso_reserva_0 {
+  display: grid;
+  grid-template-columns: 4.4em auto;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.lista_mso_reserva_0 > div:nth-child(2n + 1) {
+  color: #777;
+}
+
+.lista_mso_reserva_0 > div:nth-child(2n) {
+  justify-self: right;
+  margin-right: 3em;
+}
+*/
+
+.lista_01 {
+  margin-top: 0.7em;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.lista_01 th, .lista_01 td {
+  border: 1px solid #ccc;
+}
+
+.lista_01 input:not([type="checkbox"]),
+.lista_01 textarea {
+  border: 0;
+  background-color: transparent;
+  width: 100% !important;
+}

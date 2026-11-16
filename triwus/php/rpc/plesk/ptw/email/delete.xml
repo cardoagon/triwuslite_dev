@@ -1,0 +1,10 @@
+<packet>
+ <mail>
+  <remove>
+    <filter>
+      <site-id>[id_plesk]</site-id>
+      <name>[nome]</name>
+    </filter>
+  </remove>
+ </mail>
+</packet>

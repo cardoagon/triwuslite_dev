@@ -1,0 +1,9 @@
+<packet>
+<mail>
+<rename>
+   <site-id>[id_plesk]</site-id>
+   <name>[nome]</name>
+   <new-name>[renome]</new-name>
+</rename>
+</mail>
+</packet>

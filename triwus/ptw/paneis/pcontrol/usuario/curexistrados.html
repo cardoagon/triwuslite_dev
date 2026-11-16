@@ -1,0 +1,94 @@
+[cxclif][cxcli_inv]
+<div class="pcontrol_panel">
+ <div>
+  <div class="titulo1">
+    Gestión de usuarios
+  </div>
+  <hr size="2" color="#000000"/>
+  <div class="subtitulo2">
+    En este formulario puedes gestionar los usuarios registrados en tu web.
+    <a href="https://wiki.triwus.com/index.php?title=Tu_perfil_de_usuario"
+        target="_blank"
+        class="pcontrol_wiki"
+        alt="wiki: Tu perfil de usuario"
+        title="wiki: Tu perfil de usuario"
+        >Necesitas ayuda
+    </a>
+    <div class="pcontrol_indice_marco">
+      <a href="#urexistrados-lista">Usuarios registrados.</a>
+      <a href="#urexistrados-invitar">Gestión de invitaciones.</a>
+      <a href="#urexistrados-rudif">Validación de registros.</a>
+      <a href="#urexistrados-opciones">Opciones de login y registro.</a>
+    </div>
+  </div>
+ </div>
+ <div>
+    <a name="urexistrados-lista"></a>
+    <div class="subtitulo2" style="font-weight: bold;">Usuarios</div>
+    <hr size="1" color="#000000"/>
+    <div class="texto3">Lista de usuarios registrados en tu web.</div>
+      [cxclib]
+ </div>
+ <div class="clista-usuarios">
+    [cxclil]
+ </div>
+ <div> 
+    <a name="urexistrados-invitar"></a>
+    <div class="subtitulo2" style="font-weight: bold;">Invitaciones de registro</div>
+    <hr size="1" color="#000000"/>
+    <div class="texto3">Genera y gestiona las invitaciones de registro en tu web.</div>
+    <div style="padding: 5px 0 10px 0">
+    [bEnviarInvitacion]
+    [cxcli_li_inv]
+    </div>
+ </div>
+ <div>
+  <a name="urexistrados-rudif"></a>
+  <div class="subtitulo2" style="font-weight: bold;">
+  Lista de usuarios pendientes de validación de registro
+  </div>
+  <hr size="1" color="#000000"/>
+  <div class="texto3" style="margin-bottom: 1.5em;">
+    Un usuario no podrá finalizar el registro, hasta que este, sea validado por el usuario administrador del site.
+  </div>
+  <div class="clidifl-lista"> <!-- Cambios hechos en la tabla con Fran -->
+  [cxclidifl]
+  </div>
+ </div>
+
+ <div>
+  <a name="urexistrados-opciones"></a>
+  <div class="subtitulo2" style="font-weight: bold;">Opciones de login y registro</div>
+  <hr size="1" color="#000000"/>
+  <div class="texto3" style="margin-bottom: 1.5em;">
+    Controla las opciones de login y de registro en tu web.
+  </div>
+  <div style="display: flex; gap: 3.3em; padding: 1em; border: 1px solid #ddd; border-radius: 7px; margin-bottom: 1.7em;">
+        [chOpcion_l] 
+        [chOpcion_r]
+        [chOpcion_d]
+  </div>
+ </div>
+
+</div>
+
+<!-- modal compartir link-->
+<div id="carquivo_benlace_msx_0" class="trw-pcontrol-backdrop" style="display: none">
+  <div class="trw-pcontrol-modal" style="width: 35vw">
+    <div class="trw-pcontrol-modal__header">
+      <span class="pcontrol_vm_bpechar" style="font-size: 1.7em" onclick="carquivo_benlace_pechar()">&times;</span>
+      <div>Enlace de invitación</div>
+    </div>
+    <div class="trw-pcontrol-modal__content" style="border-radius: 0 0 10px 10px; padding-block: 2em">
+      <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%; gap: 1em">
+        <textarea
+          id="carquivo_benlace_msx_1"
+          class="texto2"
+          readonly="true"
+          style="box-sizing: border-box; width: 100%; padding: 0.5em; resize: none"
+        ></textarea>
+        <a id="carquivo_benlace_msx_2" class="carquivo_benlace_btn">Copiar enlace</a>
+      </div>
+    </div>
+  </div>
+</div>

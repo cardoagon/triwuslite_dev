@@ -1,0 +1,18 @@
+<packet>
+<mail>
+<update>
+  <set>
+   <filter>
+      <site-id>[id_plesk]</site-id>
+      <mailname>
+          <name>[nome]</name>
+          <forwarding>
+            <enabled>true</enabled>
+            <address>[email_r]</address>
+          </forwarding>
+      </mailname>
+   </filter>
+  </set>
+</update>
+</mail>
+</packet>

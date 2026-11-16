@@ -1,0 +1,66 @@
+<script>
+  var invitacion_text_focus = 0;
+  
+  function invitacion_td_to_click() {
+    if (invitacion_text_focus == 1) return;
+    
+    document.getElementById("findex;fs_confirm;to").focus();
+    
+    document.getElementById("invitacion_to_td").style.border = "1px solid #8cc63f";
+    
+    invitacion_text_focus = 1;
+  }
+  
+  function invitacion_td_from_click() {
+    if (invitacion_text_focus == 2) return;
+    
+    document.getElementById("findex;fs_confirm;from").focus();
+    
+    document.getElementById("invitacion_from_td").style.border = "1px solid #8cc63f";
+    
+    invitacion_text_focus = 2;
+  }
+  
+  function invitacion_text_blur(i) {
+    text_focus = 0;
+    
+    if (i == 1) {
+      document.getElementById("invitacion_to_td").style.border = "1px solid transparent";
+      
+      return;
+    }
+    
+    if (i == 2) {
+      document.getElementById("invitacion_from_td").style.border = "1px solid transparent";
+      
+      return;
+    }
+  }
+  
+</script>
+
+<table align=center width=97% border=0 cellspacing=0 cellpadding=1 style='padding: 17px; 11px; 11px; 11px;'>
+  <tr height=7px><td></td></tr>
+
+  <tr><td class='fgs_msx' style='padding-left: 11px;'>[texto]</td></tr>
+  
+  <tr height=27px><td><hr size=1 color='#636363' /></td></tr>
+  
+  <tr>
+    <td id="invitacion_from_td" style='padding: 5px 3px 5px 3px; border: 1px solid transparent;' onclick='invitacion_td_from_click()'>
+      <div class='texto4'>Texto para compartir ...</div>
+      [from]
+    </td>
+  </tr>
+  
+  <tr>
+    <td id="invitacion_to_td" style='padding: 5px 3px 5px 3px; border: 1px solid transparent;' onclick='invitacion_td_to_click()'>
+      <div class='texto4'>Escribe aqu&iacute; uno o varios email</div>
+      [to]
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan=2 align=center>[mensaxe]</td>
+  </tr>
+</table>

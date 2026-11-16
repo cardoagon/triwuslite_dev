@@ -1,0 +1,6 @@
+var tilia_vm_i=[];var tilia_vm_s=[];function tilia_vm_inicia(selector,id,abrir,js_pre_callback,js_post_callback){var i=tilia_vm_i.length;tilia_vm_i[i]=id;tilia_vm_s[i]=selector}
+function tilia_vm_inicia_2(selector,id,js_pre_callback,js_post_callback){tilia_vm_inicia(selector,id);tilia_vm_abrir(selector,js_pre_callback,js_post_callback)}
+function tilia_vm_id(selector){var i=tilia_vm_s.indexOf(selector);if(i<0)return null;return tilia_vm_i[i]}
+function tilia_vm_abrir(selector,js_pre_callback,js_post_callback){var id=tilia_vm_id(selector);if(id==null)return;var illa=document.getElementById(id+cnome+"illa");if(illa==null)return;illa.style.display="inline";document.getElementById(id+cnome+"display").value="inline";if(document.getElementById(id+cnome+"estatica").value=="1")return;enviaEventoAJAX(illa,"tilia-vm-abrir","",js_post_callback,js_pre_callback)}
+function tilia_vm_evento(selector,control,js_pre_callback,js_post_callback,pechar){var id=tilia_vm_id(selector);if(id==null)return;if(pechar==1)tilia_vm_close(id);enviaEventoAJAX(control,"vm-ev","",js_post_callback,js_pre_callback)}
+function tilia_vm_close(id){var illa=document.getElementById(id+cnome+"illa");if(illa==null)return;illa.style.display="none";document.getElementById(id+cnome+"display").value="none"}

@@ -1,0 +1,9 @@
+<packet>
+<mail>
+<get_prefs>
+   <filter>
+      <site-id>[id_plesk]</site-id>
+   </filter>
+</get_prefs>
+</mail>
+</packet>

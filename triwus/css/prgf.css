@@ -1,0 +1,130 @@
+
+/*
+* Esquelete, tradución ao galego de
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .contenedor                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; background-image: url('http://192.168.0.15/triwus/imx/configs/113/fondo.png');}
+    .contenedor .columna,
+    .contenedor .columnas                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Columna Classes */
+    .columna.alpha, .columnas.alpha               { margin-left: 0; }
+    .columna.omega, .columnas.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .contenedor .col_1 { width: 100%; }
+    .contenedor .col_2 { width: 50%; }
+    .contenedor .col_3 { width: 33%; }
+    .contenedor .col_2tercios { width: 67%; }
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .contenedor                                  { width: 768px; }
+        .contenedor .columna,
+        .contenedor .columnas                         { margin-left: 10px; margin-right: 10px;  }
+        .columna.alpha, .columnas.alpha               { margin-left: 0; margin-right: 10px; }
+        .columna.omega, .columnas.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+    .contenedor .col_1 { width: 100%; }
+    .contenedor .col_2 { width: 50%; }
+    .contenedor .col_3 { width: 33%; }
+    .contenedor .col_2tercios { width: 67%; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .contenedor { width: 300px; }
+        .contenedor .columnas,
+        .contenedor .columna { margin: 0; }
+
+    .contenedor .col_1 { width: 100%; }
+    .contenedor .col_2 { width: 50%; }
+    .contenedor .col_3 { width: 33%; }
+    .contenedor .col_2tercios { width: 67%; }
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .contenedor { width: 420px; }
+        .contenedor .columnas,
+        .contenedor .columna { margin: 0; }
+
+    .contenedor .col_1 { width: 100%; }
+    .contenedor .col_2 { width: 50%; }
+    .contenedor .col_3 { width: 33%; }
+    .contenedor .col_2tercios { width: 67%; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .contenedor:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+/*
+      zoom: 1; 
+*/
+}
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

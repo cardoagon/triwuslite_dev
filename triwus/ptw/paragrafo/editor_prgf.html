@@ -1,0 +1,52 @@
+<!-- editor parrafo -->
+<div class="trw-form-1"> Personaliza el estilo de tu párrafo.</div>
+<fieldset class="fset-editor">
+  <legend class="editor_legend fset-editor__legend"> Básico </legend>
+  <div class="trw-form-2b">
+    <div class="trw-form-1">
+      <label>Título</label>
+      [nome]   
+    </div>
+    <div class="trw-form-1">
+      <label>URL</label>
+      <input type="text" value="#[url_ancla]" readonly="true"/>
+        <div style="display:flex;gap:1em;margin:0.2em 0 0 0.2em;">
+          <div class="lista_elemento_a" title="Copiar URL" onclick="carquivo_benlace('[url]')">Copiar</div>
+          <div class="lista_elemento_a" title="Abrir URL"  onclick="window.open('[url]', '_blank')">Abrir</div>
+        </div>    
+    </div>
+  </div>
+
+  <div class="trw-form-1">
+    <label>Número de columnas</label>
+    <div style="width: 10em;">[sColumnas]</div>
+  </div>
+</fieldset>
+<fieldset class="fset-editor">
+  <legend class="editor_legend fset-editor__legend"> Estilo </legend>
+  [cstyle]
+</fieldset>
+
+
+
+
+  <!-- modal compartir link-->
+  <div id="carquivo_benlace_msx_0" class="trw-pcontrol-backdrop" style="display: none">
+    <div class="trw-pcontrol-modal" style="width: 35vw">
+      <div class="trw-pcontrol-modal__header">
+        <span class="pcontrol_vm_bpechar" style="font-size: 1.7em" onclick="carquivo_benlace_pechar()">&times;</span>
+        <div>Enlace</div>
+      </div>
+      <div class="trw-pcontrol-modal__content" style="border-radius: 0 0 10px 10px; padding-block: 2em">
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%; gap: 1em">
+          <textarea
+            id="carquivo_benlace_msx_1"
+            class="texto2"
+            readonly="true"
+            style="box-sizing: border-box; width: 100%; padding: 0.5em; resize: none"
+          ></textarea>
+          <a id="carquivo_benlace_msx_2" class="carquivo_benlace_btn">Copiar enlace</a>
+        </div>
+      </div>
+    </div>
+  </div>

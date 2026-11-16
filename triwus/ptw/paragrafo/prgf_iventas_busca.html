@@ -1,0 +1,59 @@
+[hevento]
+<div class="elmt_ventas_busca_1">
+  <div class="elmt_ventas_busca_header">
+    <div class="elmt_ventas_busca_titulo">&#10140; Filtrado de productos</div>
+    <div class="elmt_ventas_busca_cerrar">
+      <img src="triwus/imx/accions/bcancel-2.svg" alt = "[X]"
+            title = "Seguir comprando"
+            style = "width: 23px;cursor: pointer;" 
+            onclick = "prgf_iventas_0000()" />
+    </div>
+  </div>
+
+  <div class="novas2_busca_filtros">
+    [txt]
+    <div class="novas2_blimpar_buscador">
+      <button type="button" id="id_btn_clear" class="novas2_close_icon" style="display:none;" onclick="prgf_inovas_clear_2(this)">x</button>
+    </div>
+    <button type="button" class="novas2_boton_buscar" onclick="prgf_iventas_url_f()"></button>
+  </div>
+
+  <div class="elmt_ventas_busca_content">
+    <div id="trw_ventas_busca_subcats" class="elmt-ventas-busca-psubcats">
+      [psubcats]
+    </div>    
+    <div id="trw_ventas_busca_marcas" class="elmt-ventas-busca-pmarcas">
+      [pmarcas]
+    </div>
+<!-- <div>
+      <div class='elmt_ventas_busca_4' style='margin: 17px 0 0 0;'>PRECIOS</div>
+        [pvp]
+      </div> -->
+  </div>
+
+  <div class="elmt_ventas_busca_footer">
+    <div class="elmt_ventas_busca_btnaceptar">
+      <button type="button" onclick="prgf_iventas_url_f()" title="Aceptar filtros"
+              class="button" style="white-space: nowrap;">
+        <span class="elmt_ventas_busca_titulo">✔</span>&nbsp;&nbsp;Aceptar</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+function prgf_inovas_clear(o) {
+  let btn = document.getElementById("id_btn_clear");
+  if(o.value !== "") btn.style.display = "flex";
+  else btn.style.display = "none";
+}
+
+function prgf_inovas_clear_2(btn) {
+  let o = document.querySelector("input[type=text]");
+  o.value = "";
+  btn.style.display = "none";
+  //~ prgf_inovas_url_f();
+}
+
+</script>

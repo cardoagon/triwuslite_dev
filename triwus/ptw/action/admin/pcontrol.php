@@ -1,0 +1,38 @@
+<?php
+
+error_reporting(E_ALL ^ E_NOTICE);
+
+
+require "config.php";
+
+chdir('../triwus');
+
+
+$nome_sesion  = "triwus.pcontrol.php";
+
+$tilia_home   = "tilia/";
+$fs_home      = "";
+
+$ehttp_inicio = "Econsulta_site";
+
+
+require "{$tilia_home}manifesto.php";
+require "manifesto.php";
+require "manifesto_adminsite.php";
+
+
+if (!session_start()) die ("script action '{$nome_sesion}', !session_start()");
+
+
+unset($_SESSION['triwus.editor.php']);
+
+if (isset($_GET['k']) && ($_GET['k'] == "0")) {
+  unset($_SESSION['triwus.pcontrol.php']);
+}
+
+
+
+$tilia = new Tilia($nome_sesion, $tilia_home, $ehttp_inicio);
+
+$tilia->transitar();
+

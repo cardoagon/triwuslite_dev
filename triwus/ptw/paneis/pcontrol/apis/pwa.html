@@ -1,0 +1,129 @@
+<div class="pcontrol_panel pwa">
+  <div>
+    <div class="titulo1">PWA</div>
+    <hr size="2" color="#000000" />
+    <div class="subtitulo2">
+      Rellena este formulario para configurar tu aplicación web progresiva (PWA).<br>
+      Esto permitirá que los visitantes de tu web puedan instalarla como una aplicación nativa.
+    </div>
+  </div>
+
+  <fieldset>
+    <legend>Activar la funcionalidad de PWA</legend>
+    <div class="trw-form-1">[activo]</div>
+  </fieldset>
+
+  <div class="trw-form-2a" style="grid-template-columns: 66% auto">
+    <fieldset>
+      <legend>Básicos</legend>
+      <div class="trw-form-2a" style="grid-template-columns: 66% auto">
+        <div class="trw-form-1">
+          <label>Nombre</label>
+          [nome_l]
+          <span class="trw-form-axuda">Este nombre se mostrará en el diálogo de instalación y en la lista de aplicaciones del dispositivo.</span>
+        </div>
+        <div class="trw-form-1">
+          <label>Alias</label>
+          [nome_c]
+          <span class="trw-form-axuda">Una versión breve del nombre (máx. 12 caracteres) que aparecerá debajo del icono de la app en la pantalla de inicio del móvil</span>
+        </div>
+      </div>
+      <div class="trw-form-1">
+        <label>Descripción</label>
+        [descri]
+        <span class="trw-form-axuda">Un resumen breve (máx. 255 caracteres) que describe el propósito de tu app. Aparecerá en el diálogo de instalación para informar al usuario sobre qué va a instalar.</span>
+      </div>
+    </fieldset>
+
+    <!-- colores -->
+    <fieldset>
+      <legend>Colores</legend>
+      <div class="trw-form-1">
+        <label>Principal</label>
+        [color_p]
+        <div class="trw-form-axuda">
+          El color pricipal se usará en la barra de título de la app.
+        </div>
+      </div>
+      <div class="trw-form-1">
+        <label>Fondo</label>
+        [color_f]
+        <div class="trw-form-axuda">
+          El color de fondo se mostrará brevemente mientras se inicia la app.
+        </div>
+      </div>
+    </fieldset>
+
+   </div>
+
+  <!-- iconos -->
+  <fieldset>
+    <legend>Iconos</legend>
+    <p>Los iconos, principal y adaptable, representarán a tu app cuando los usuarios la instalen en sus dispositivos móviles.</p>
+    <div class="trw-form-1">
+      <div><b>Recomendaciones generales:</b></div>
+      <ul style="padding-left: 1em;">
+         <li>La imagen debe ser cuadrada (igual de ancho que de alto).</li>
+         <li>El logo o elemento principal es recomendable que esté centrado y ocupe solo el 75 % del área, dejando espacio alrededor.</li>
+         <li>Formato permitido: <b>PNG o WebP</b></li>
+         <li>Tamaño máximo del archivo: <b>256 KB.</b></li>
+      </ul>
+    </div>
+    
+    <div class="trw-form-2a">
+      <div class="trw-form-1">
+        [logo_0]
+        <span class="trw-form-axuda">El icono principal se mostrará en la lista de aplicaciones y en los avisos de instalación.</span>
+        <span class="trw-form-axuda"><b>Consejo:</b> Asegúrate de que sea una imagen nítida y cuadrada de exactamente 512×512 píxeles para una visualización perfecta.</span>
+      </div>
+
+<!--
+      <p>&nbsp;</p>
+-->
+
+      <div class="trw-form-1">
+        [logo_m]
+        <span class="trw-form-axuda">El icono adaptable está pensado para que los sistemas modernos (como Android 8+ o algunos navegadores) puedan recortarlo automáticamente y mostrarlo en distintas formas: redondo, cuadrado con bordes redondeados, gota, etc.</span>
+        <span class="trw-form-axuda"><b>Consejo:</b> Para que funcione correctamente, asegúrate de que tu logo o elemento principal ocupe solo el 75% central de la imagen,dejando los bordes como un margen de seguridad.</span>
+      </div>
+    </div>
+    
+  </fieldset>
+
+  <div class="pcontrol_btnr_marco_1">[bCancelar][bAceptar]</div>
+
+</div>
+
+<style>
+  input[type="color"] {
+    -webkit-appearance: none; /* Chrome/Safari */
+    border: 2px solid #ccc;
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  /* Para WebKit: remueve el círculo interno en el selector */
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+    
+  }
+  /* Firefox */
+  input[type="color"]::-moz-color-swatch {
+    border: none;
+  }
+
+  .trw-form-1 > label {
+    font-size: 1.1em;
+  }
+
+  .trw-form-axuda {
+    font-size: 1em;
+  }
+</style>

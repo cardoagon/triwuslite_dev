@@ -1,0 +1,607 @@
+.cpagar2_bcarro {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+.cpagar2_bcarro_ct {
+  color: #000;
+  background-color: #fff;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 9px;
+  text-align: center;
+  border: 1px solid #000;
+  width: 15px;
+  margin: 0 0 3px 0;
+  position: relative;
+  top: -18px;
+  left: 20px
+}
+.cpagar2_marco {
+  padding: 11px 2% 66px 2%
+}
+.cpagar2_marco_00 {
+  display: grid;
+  grid-template-areas: 'trw_carro_02 trw_carro_02 trw_carro_02 trw_carro_01 trw_carro_01';
+  grid-gap: 0;
+  margin: 0 0 33% 0;
+  padding: 0
+}
+.cpagar2_marco_00>div {
+  text-align: left
+}
+.cpagar2_marco_01 {
+  grid-area: trw_carro_01;
+  position: sticky;
+  top: 66px;
+  height: 0vh;
+  min-width: 333px;
+  width: 444px;
+  max-width: 777px;
+  background-color: #fff;
+  z-index: 3;
+}
+.cpagar2_marco_02 {
+  grid-area: trw_carro_02
+}
+.cpagar2_marco a {
+  color: #00f;
+  white-space: nowrap
+}
+.cpagar2_titulo_0 {
+  color: #000;
+  line-height: 202%;
+  font-size: 121%;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+}
+.cpagar2_titulo_kok {
+  color: #000;
+  line-height: 202%;
+  font-size: 131%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cpagar2_titulo_kok img {
+  height: 1.1em;
+  margin-right: 0.7em
+}
+.cpagar2_fila {
+  text-align: left;
+  padding: 0 1%;
+  margin: 0 1%;
+}
+.cpagar2_fila_2 {
+  padding: 7px 11px 5px 0;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 97%;
+}
+.cpagar2_fila_2b {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.cpagar2_fila_kok {
+  padding: 7px 11px 5px 11px;
+  font-size: 121%;
+  line-height: 200%;
+}
+
+.cpagar2_1c,
+.cpagar2_2c,
+.cpagar2_2c_33,
+.cpagar2_2c_66 {
+  margin: 0;
+  padding: 0 2% 11px 0;
+  display: inline-block;
+  vertical-align: top
+}
+
+.cpagar2_1c {
+    width: 100%
+}
+.cpagar2_2c {
+    width: 47%
+}
+.cpagar2_2c_33 {
+    width: 31%
+}
+.cpagar2_2c_66 {
+    width: 63%
+}
+.cpagar2_form,
+.cpagar2_form_kok,
+.cpagar2_form_destino {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top
+}
+.cpagar2_form {
+    width: 100%;
+    display: flex;
+    flex-flow: column
+}
+.cpagar2_form_kok {
+    padding: 11px 0 0 3%
+}
+.cpagar2_form table {
+    font-size: 12px
+}
+.cpagar2_btnr_a,
+.cpagar2_btnr_b {
+    width: 50%;
+    display: inline-block
+}
+.cpagar2_link {
+    color: #0000ba;
+    cursor: pointer
+}
+.cpagar2_link_r {
+    display: none
+}
+.cpagar2_link:hover {
+    text-decoration: underline
+}
+.cpagar2_b1 {
+    background-image: url(https://triwus.com/imx/accions/bpaso_anterior.png)
+}
+.cpagar2_b2 {
+    background-image: url(https://triwus.com/imx/accions/bApply.png);
+    margin: 33px 0 0 5px
+}
+.cpagar3_info-envio-container {
+    margin: 10px 2% 1em 1%;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px 3px 0 0;
+    padding-bottom: 2em;
+    border-top: 0
+}
+.cpagar3_grid-info-envio {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px 15px;
+    border-radius: 3px 3px 0 0;
+    margin: 0 3%
+}
+.cpagar3_nombre,
+.cpagar3_recollida,
+.cpagar3_observaciones,
+.cpagar3_envio-sabado {
+    grid-column: 1 / -1
+}
+.cpagar3_observaciones {
+    border-top: 1px solid #d5d5d5;
+    margin: 0;
+    padding: 1.7em 0 0 0
+}
+.cpagar3_recollida {
+    border-top: 1px solid #d5d5d5;
+    margin: 1.7em 0 0 0;
+    padding: 1.7em 0 0 0
+}
+.cpagar3_dni {
+    grid-column: span 2
+}
+.cpagar3_razon-social {
+    grid-column: span 4
+}
+/*
+.cpagar3_contacto {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between
+}
+*/
+.cpagar3_fila-telefono {
+    display: flex;
+    align-items: center
+}
+.cpagar3_fila-telefono::before {
+    content: '+';
+    margin-right: 5px
+}
+.cpagar3_fila-telefono>input:nth-child(1) {
+    margin: 0 5px !important;
+    width: 2em !important;
+    text-align: center
+}
+.cpagar3_enderezo-container {
+    grid-column: 1 / -1
+}
+.cpagar3_enderezo-container>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px 15px
+}
+.cpagar3_enderezo-tvia {
+    grid-column: span 2
+}
+.cpagar3_enderezo-via {
+    grid-column: span 4
+}
+.cpagar3_enderezo-n {
+    grid-column: span 2
+}
+.cpagar3_enderezo-portal {
+    grid-column: span 4
+}
+.cpagar3_enderezo-cp {
+    grid-column: span 2
+}
+.cpagar3_enderezo-poblacion {
+    grid-column: span 2
+}
+.cpagar3_enderezo-pais {
+    grid-column: span 2
+}
+.cpagar3_grid-info-envio label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px
+}
+.cpagar3_text {
+    width: 100%;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+    max-width: -moz-available;
+    max-width: -webkit-fill-available
+}
+.cpagar3_text:focus {
+    background-color: white;
+    border: 1px solid rgb(49, 49, 49)
+}
+.cpagar3_requerido::before {
+    content: '(*) '
+}
+.cpagar3_grid-info-envio select {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    background-color: #fafafa;
+    height: 2.6em;
+    border-radius: 2px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #fafafa url("imx/select.0.gif") no-repeat 95% center;
+    background-position-x: 96%
+}
+.cpagar3_msx-erros {
+    padding: 15px;
+    font-size: 12px
+}
+.cpagar3_info {
+    color: #777;
+    font-size: 13px;
+    line-height: 141%;
+    padding: 3%
+}
+/*
+.cpagar3_contacto {
+    flex-wrap: nowrap
+}
+*/
+.cpagar3_telefono {
+    grid-column: span 2;
+/*
+    display: flex;
+    justify-content: space-between
+*/
+
+}
+.cpagar3_mail {
+    grid-column: span 4;
+/*
+    display: flex;
+    justify-content: space-between
+*/
+
+}
+.cpagar3_fila-telefono-pre {
+    margin-right: 5px
+}
+.cpagar3_fila-telefono-pre>input {
+    width: 3em !important;
+    text-align: center;
+    margin-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0
+}
+.cpagar3_fila-telefono-num {
+    width: -moz-available
+}
+.cpagar3_fila-telefono-num>input {
+    width: 100% !important
+}
+.cpagar3_nota,
+.cpagar3_nota0 {
+    color: #777
+}
+.cpagar3_nota0 {
+    font-size: 13px;
+    line-height: 141%;
+    margin: 3px 0 11px 0
+}
+.cpagar3_nota {
+    font-size: 91%;
+    line-height: 131%
+}
+.cpagar3_nota2 {
+    font-size: 12px;
+    color: #777;
+    line-height: 131%;
+    background-color: #F7F2AE;
+    padding: 7px 11px;
+    margin: 21px 1%;
+    border-radius: 3px;
+    border: 1px solid #999
+}
+.cpagar3_nota2 legend {
+    font-size: 111%;
+    font-weight: bold;
+    padding-bottom: 11px
+}
+.cpagar3_nota2 legend img {
+    height: 1.1em;
+    margin-right: 0.7em
+}
+.cpagar3_titulo {
+    background-color: #d5d5d5;
+    font-size: 1.2em;
+    border-radius: 3px 3px 0 0;
+    margin: 10px 0 0 0;
+    padding: 14px
+}
+.cpagar3_fp_checkers_grid {
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+.lista_carro {
+    display: flex;
+    flex-direction: column
+}
+.lista_carro button {
+    font-size: 14px;
+    padding: 0.3em;
+}
+.lista_carro_bmais {
+    padding: 0.3em;
+}
+.lista_carro_aux {
+    color: #000;
+    margin: 0;
+    padding: 3%;
+    border: 1px solid #d5d5d5;
+    background-color: #fff
+}
+.lista_carro_aux_1 {
+    width: 97%;
+    font-size: 12px;
+    margin: 0 1%
+}
+.lista_carro_aux_2_0 {
+    font-size: 1.3em;
+    cursor: pointer
+}
+.lista_carro_aux_2_1 {
+    white-space: nowrap
+}
+.lista_carro_aux_2_1>input[type="text"] {
+    text-align: center !important;
+    width: 7em !important
+}
+.lista_carro_aux_2_2 {
+    text-align: right
+}
+.lista_carro_aux_3b {
+    flex-grow: 1
+}
+.lista_carro_aux_3b>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em
+}
+.lista_carro_imx {
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.lista_carro_imx_b {
+    vertical-align: middle;
+    display: table-cell;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    background-color: rgba(101, 101, 101, 0.67)
+}
+.lista_carro_link,
+.lista_carro a {
+    color: #0000ba;
+    text-decoration: underline;
+    cursor: pointer
+}
+.lista_carro_td_cab,
+.lista_carro_eliminar,
+.lista_carro_elemento,
+.lista_carro_elemento_a {
+    text-transform: none;
+    color: #000
+}
+.lista_carro_total_0000 {
+    font-size: 141%;
+    margin-top: 7px;
+    border-top: 1px solid #eee;
+    padding-top: 17px
+}
+.lista-carro-aux-scroll {
+    max-height: 210px;
+    overflow: hidden scroll
+}
+.cpagar3_cregalo_0001 {
+    width: 111px;
+    margin: 11px;
+    display: table;
+    display: inline-block
+}
+.cpagar3_cregalo_0002 {
+    cursor: pointer;
+    margin: 3px 2% 0 2%;
+    border-radius: 3%;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+.cpagar3_cregalo_0002:hover {
+    box-shadow: 0px 0px 8px -2px rgba(99, 99, 99, 1);
+    color: #000
+}
+.cpagar3_cregalo_0003 {
+    color: transparent;
+    background-color: transparent;
+    margin: 0;
+    border-radius: 3px;
+    height: 99px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 111px;
+    text-align: center;
+    font-size: 12px
+}
+.cpagar3_cregalo_0003:hover {
+    color: #fff;
+    background-color: rgba(101, 101, 101, 0.67)
+}
+.cpagar3_cregalo_0004a {
+    border: 1px solid #8cd4e4;
+    padding: 5px;
+    border-radius: 3px 3px 0 0;
+    margin-top: 7px;
+    background-color: #8cd4e4
+}
+.cpagar3_cregalo_0004b {
+    border: 1px solid #8cd4e4;
+    padding: 5px
+}
+@media only screen and (max-width: 1111px) {
+/*
+    .cpagar3_telefono {
+      grid-column: span 6;
+    }
+    .cpagar3_mail {
+      grid-column: span 6;
+    }
+*/
+    .cpagar3_fila-telefono>input:nth-child(2) {
+        width: 90% !important
+    }
+}
+@media only screen and (max-width: 828px) {
+    .cpagar3_fp_checkers_grid {
+        grid-template-columns: 100%
+    }
+    .cpagar2_marco {
+        padding: 11px 2% 0 2%
+    }
+    .cpagar2_form {
+        padding: 11px 0 0 0
+    }
+    .cpagar2_fila {
+        border: 0;
+        border-top: 1px solid #ddd
+    }
+    .cpagar2_fila legend {
+        margin-left: 5%
+    }
+    .cpagar2_fila_2b {
+        width: 49%
+    }
+    .cpagar2_marco_00 {
+        margin-top: 99px;
+        grid-template-areas: 'trw_carro_01' 'trw_carro_02'
+    }
+    .cpagar2_marco_01 {
+        grid-area: trw_carro_01;
+        position: initial;
+        top: initial;
+        height: initial;
+        min-width: initial;
+        width: initial;
+        max-width: initial;
+        z-index: initial
+    }
+}
+@media only screen and (max-width: 676px) {
+    .cpagar2_fila_2b {
+        width: 96%;
+        margin-top: 9px
+    }
+
+    .cpagar2_marco_01 {
+        grid-area: trw_carro_01
+    }
+
+    .cpagar2_marco_02 {
+        grid-area: trw_carro_02
+    }
+
+    .lista-carro-aux-scroll {
+        max-height: unset
+    }
+
+    .cpagar3_dni, .cpagar3_telefono, .cpagar3_mail, .cpagar3_razon-social {
+        grid-column: span 3
+    }
+}
+@media only screen and (max-width: 444px) {
+    .cpagar2_fila_2b {
+        width: 96%;
+        margin-top: 9px
+    }
+}
+@media only screen and (max-width: 300px) {
+    .cpagar3_grid-info-envio {
+        grid-template-columns: 1fr
+    }
+    .cpagar3_grid-info-envio>div {
+        grid-column: 1 / -1
+    }
+    .cpagar3_enderezo-container>div:nth-child(1) {
+        grid-template-columns: 1fr
+    }
+    .cpagar3_enderezo-container>div:nth-child(1)>div {
+        grid-column: 1 /-1
+    }
+}

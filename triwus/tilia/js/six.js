@@ -1,0 +1,5 @@
+function tilia_coords(){var hl=document.getElementById("findex;location");if(hl.value.length>0)return hl.value.split("@");return null}
+function tilia_coords_reset(callback){var hl=document.getElementById("findex;location");hl.value="";enviaEventoAJAX(hl,"location-reset","",callback,null)}
+function tilia_localizar_inicia(options,forzar,callback){if(tilia_coords()!=null)if(!forzar)return;if(!navigator.geolocation)return;var fsucces=function(p){tilia_localizar_inicia_succes(p,callback)};var ferror=function(e){tilia_localizar_inicia_error(e,callback)};navigator.geolocation.getCurrentPosition(fsucces,ferror,options)}
+function tilia_localizar_inicia_succes(p,callback){var hl=document.getElementById("findex;location");hl.value=p.coords.latitude+"@"+p.coords.longitude;enviaEventoAJAX(hl,"location-init","",callback,null)}
+function tilia_localizar_inicia_error(e,callback){var hl=document.getElementById("findex;location");hl.value='erro@'+e.code;enviaEventoAJAX(hl,"location-init","",callback,null)}
