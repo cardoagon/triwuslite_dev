@@ -12,9 +12,10 @@ $ehttp_inicio = "EInstalar";
 
 require "{$tilia_home}manifesto.php";
 
-if (is_file("{$trw_home}Config.php")) {
-   require "{$trw_home}Config.php";
-}
+if ( is_file("{$trw_home}Config.php") )
+  require "{$trw_home}Config.php";
+else
+  require "{$trw_home}Config-instal.php";
 
 require "{$trw_home}php/control/Refs.php";
 
