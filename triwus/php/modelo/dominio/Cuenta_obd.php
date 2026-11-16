@@ -22,13 +22,13 @@ final class Cuenta_obd {
   }
   
   public function _subs(FS_cbd $cbd = null):array {
-    if (($u = $this->u->atr("id_usuario")->valor) == null) return [];
+    if (($k = $this->s->atr("id_site")->valor) == null) return [];
 
     if ($cbd == null) $cbd = new FS_cbd();
 
     $sql = "select a.nome, a.version
-              from servizo a
-             where (a.id_usuario = {$u}) and (id_sb = '121000')";
+              from site_subs a
+             where (a.id_site = {$k})";
 
     $r = $cbd->consulta($sql);
 
